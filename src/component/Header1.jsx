@@ -1,0 +1,36 @@
+import { Navbar, Button, NavbarBrand } from "flowbite-react";
+import logo from "../asset/servii_logo.svg";
+import "tailwindcss/tailwind.css";
+
+function Header1() {
+  return (
+    <Navbar className="p-0">
+      <NavbarBrand>
+        <img
+          src={logo}
+          alt="Logo"
+          className="bg-white padding-0
+          
+          "
+        />
+      </NavbarBrand>
+      <Navbar.Toggle />
+
+      <Navbar.Collapse>
+        <Navbar.Link href="#">Home</Navbar.Link>
+        <Navbar.Link href="#">Solutions</Navbar.Link>
+        <Navbar.Link href="#">Features</Navbar.Link>
+        <Navbar.Link href="#">Industries</Navbar.Link>
+        <Navbar.Link href="#">FAQs</Navbar.Link>
+        <Navbar.Link href="#">Contact us</Navbar.Link>
+      </Navbar.Collapse>
+
+      <Button color="success" pill>
+        Book a demo
+      </Button>
+      
+    </Navbar>
+  );
+}
+
+export default Header1;
