@@ -4,6 +4,7 @@ import { useState } from "react";
 import Header from "./component/Header1";
 import "./App.css";
 import Second from "./component/Second.jsx";
+import Third from "./component/Third.jsx";
 import Firstsection from "./component/Firstsection.jsx";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <div className="">
       <Header />
       <Second />
+      {/* <Third /> */}
     </div>
   );
 }

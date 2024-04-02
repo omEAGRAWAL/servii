@@ -13,6 +13,7 @@ function Second() {
               textAlign: "center",
               padding: "100px 0px 0px 0px",
             }}
+            className="text-4xl md:text-5xl lg:text-6xl"
           >
             <p>One smart Conversational AI tool</p>
             <p>for your business</p>
@@ -48,6 +49,13 @@ function Second() {
       <Card>
         <img
           src="https://framerusercontent.com/images/D6CTA1pnxhaC0a4Nhx7rUtxz4.png" // Replace with the path to your image file
+          alt="Your Image"
+          className="w-full"
+        />
+      </Card>
+      <Card>
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/quotegram-c911f.appspot.com/o/serviqr.png?alt=media&token=cfc7a8b3-b0d6-44e3-ac96-4a2c7f4a9c41" // Replace with the path to your image file
           alt="Your Image"
           className="w-full"
         />
