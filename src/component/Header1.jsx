@@ -4,32 +4,34 @@ import "tailwindcss/tailwind.css";
 
 function Header1() {
   return (
-    <Navbar className="p-0">
-      <NavbarBrand>
-        <img
-          src={logo}
-          alt="Logo"
-          className="bg-white padding-0
+    <>
+      <Navbar className="p-4 bg-white ">
+        <NavbarBrand>
+          <img
+            src={logo}
+            alt="Logo"
+            className="bg-white padding-0
           
           "
-        />
-      </NavbarBrand>
-      <Navbar.Toggle />
+          />
+        </NavbarBrand>
+        <Navbar.Toggle />
 
-      <Navbar.Collapse>
-        <Navbar.Link href="#">Home</Navbar.Link>
-        <Navbar.Link href="#">Solutions</Navbar.Link>
-        <Navbar.Link href="#">Features</Navbar.Link>
-        <Navbar.Link href="#">Industries</Navbar.Link>
-        <Navbar.Link href="#">FAQs</Navbar.Link>
-        <Navbar.Link href="#">Contact us</Navbar.Link>
-      </Navbar.Collapse>
+        <Navbar.Collapse>
+          <Navbar.Link href="#">Home</Navbar.Link>
+          <Navbar.Link href="#">Solutions</Navbar.Link>
+          <Navbar.Link href="#">Features</Navbar.Link>
+          <Navbar.Link href="#">Industries</Navbar.Link>
+          <Navbar.Link href="#">FAQs</Navbar.Link>
+          <Navbar.Link href="#">Contact us</Navbar.Link>
+        </Navbar.Collapse>
 
-      <Button color="success" pill>
-        Book a demo
-      </Button>
-      
-    </Navbar>
+        <Button color="success" pill>
+          Book a demo
+        </Button>
+      </Navbar>
+      <hr style={{ margin: "0" }} />
+    </>
   );
 }
 
