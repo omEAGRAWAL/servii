@@ -1,0 +1,7 @@
+.Header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999; /* Adjust z-index as needed to ensure the header is above other content */
+  }
+  

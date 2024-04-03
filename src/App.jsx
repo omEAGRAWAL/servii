@@ -3,6 +3,7 @@ import { useState } from "react";
 // import { Button } from "flowbite-react";
 import Header from "./component/Header1";
 import "./App.css";
+import Fourth from "./component/Fourth.jsx";
 import Second from "./component/Second.jsx";
 import Third from "./component/Third.jsx";
 import Firstsection from "./component/Firstsection.jsx";
@@ -15,6 +16,7 @@ function App() {
     <div className="">
       <Header />
       <Second />
+      <Fourth />
       {/* <Third /> */}
     </div>
   );

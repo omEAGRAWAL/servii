@@ -15,6 +15,10 @@ function Header1() {
           "
           />
         </NavbarBrand>
+        <Button color="success" pill>
+          Book a demo
+        </Button>
+
         <Navbar.Toggle />
 
         <Navbar.Collapse>
@@ -25,10 +29,6 @@ function Header1() {
           <Navbar.Link href="#">FAQs</Navbar.Link>
           <Navbar.Link href="#">Contact us</Navbar.Link>
         </Navbar.Collapse>
-
-        <Button color="success" pill>
-          Book a demo
-        </Button>
       </Navbar>
       <hr style={{ margin: "0" }} />
     </>
