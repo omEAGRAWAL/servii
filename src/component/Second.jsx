@@ -1,6 +1,6 @@
 import { Button, Card } from "flowbite-react";
 import whata from "../asset/image66.png";
-
+import serviqrr from "../asset/serviqr.png";
 function Second() {
   return (
     <div>
@@ -60,7 +60,7 @@ function Second() {
       <Card className="shadow-none border-none ">
         <div className="flex justify-center">
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/quotegram-c911f.appspot.com/o/serviqr.png?alt=media&token=cfc7a8b3-b0d6-44e3-ac96-4a2c7f4a9c41" // Replace with the path to your image file
+            src={serviqrr}
             alt="Your Image"
             className="w-4/5 pt-20 mt-20 md-20 "
           />
