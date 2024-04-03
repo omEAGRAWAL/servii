@@ -1,9 +1,11 @@
 import { Button, Card } from "flowbite-react";
+import whata from "../asset/image66.png";
+
 function Second() {
   return (
-    <>
-      <Card>
-        <div className="flex flex-col items-center justify-center">
+    <div>
+      <Card className="shadow-none border-none ">
+        <div className="flex flex-col items-center justify-center ">
           <div
             style={{
               fontFamily: "Abhaya Libre",
@@ -40,27 +42,47 @@ function Second() {
               padding: "60px 0px 0px 0px",
             }}
           >
-            <Button color="success" size="xl">
+            <Button color="success" className="bg-[#12bf7c]" size="xl">
               Book a Demo
             </Button>
           </div>
         </div>
       </Card>
-      <Card className="border-none">
-        <img
-          src="https://framerusercontent.com/images/D6CTA1pnxhaC0a4Nhx7rUtxz4.png" // Replace with the path to your image file
-          alt="Your Image"
-          className="w-full"
-        />
+      <Card className="shadow-none border-none pt-20 mt-20 ">
+        <div className="flex justify-center">
+          <img
+            src="https://framerusercontent.com/images/D6CTA1pnxhaC0a4Nhx7rUtxz4.png" // Replace with the path to your image file
+            alt="Your Image"
+            className="w-4/5"
+          />
+        </div>
       </Card>
-      <Card className="border-none">
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/quotegram-c911f.appspot.com/o/serviqr.png?alt=media&token=cfc7a8b3-b0d6-44e3-ac96-4a2c7f4a9c41" // Replace with the path to your image file
-          alt="Your Image"
-          className="w-full pt-20 mt-20"
-        />
+      <Card className="shadow-none border-none ">
+        <div className="flex justify-center">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/quotegram-c911f.appspot.com/o/serviqr.png?alt=media&token=cfc7a8b3-b0d6-44e3-ac96-4a2c7f4a9c41" // Replace with the path to your image file
+            alt="Your Image"
+            className="w-4/5 pt-20 mt-20 md-20 "
+          />
+        </div>
       </Card>
-    </>
+      <Card className="shadow-none border-none mt-20 pt-20">
+        <div
+          className="flex justify-center"
+          style={{
+            backgroundImage:
+              "url('https://firebasestorage.googleapis.com/v0/b/quotegram-c911f.appspot.com/o/solution1.png?alt=media&token=c90b0e91-e08f-4060-9db6-b457f9c197d9')",
+            backgroundSize: "cover",
+          }}
+        >
+          <img
+            src="https://framerusercontent.com/images/9jaqMQyANO7SAifdJ2rrbJHeAw.png?scale-down-to=1024" // Replace with the path to your image file
+            alt="Your Image"
+            className="w-4/5 pt-20 mt-20 md-20 "
+          />
+        </div>
+      </Card>
+    </div>
   );
 }
 

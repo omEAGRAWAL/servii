@@ -3,13 +3,10 @@ import { Card, Button } from "flowbite-react";
 
 function Fourth() {
   return (
-    <Card>
-      <div className="flex flex-row  ">
+    <Card className="border-none shadow-none">
+      <div className="flex flex-row mt-20 pt-20 items-center">
         <div className=" flex flex-col  w-1/2">
-          <div
-            style={{ fontFamily: "Abhaya Libre" }}
-            className=" text-4xl flex flex-col items-center  "
-          >
+          <div style={{ fontFamily: "Abhaya Libre" }} className=" text-4xl   ">
             <p>Automate your Customer</p>
             <p>Engagement through</p>
           </div>
@@ -21,12 +18,9 @@ function Fourth() {
             <p> & Customer Support.</p>
           </div>
 
-          <Button
-            color="success"
-            className="  mt-8  justify-center "
-          >
-            Request a Demo
-          </Button>
+          <div className="flex justify-center mt-8">
+            <Button color="success">Request a Demo</Button>
+          </div>
         </div>
         <div size="l" className="w-1/2 ">
           eunfnehbh
