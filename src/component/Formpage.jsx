@@ -70,7 +70,7 @@ function MyComponent() {
         <img src={contact} alt="mmmmmmmmmmmmmm" />
       </div>
       <div>
-        <img src={contactmobile} alt="" className="md:hidden p-7" />
+        <img src={contactmobile} alt="contact mobile" className="md:hidden " />
       </div>
       <div className="flex flex-col md:w-3/5 p-16 justify-center   rounded-3xl bg-zinc-50 max-w-full">
         <form className="flex flex-col max-w-full pr-10">
