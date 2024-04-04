@@ -6,14 +6,14 @@ import contactmobile from "../asset/contacttextmobile.png";
 
 function InputField({ label, placeholder, className }) {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col  font-abhaya-libre">
       <label className="text-xl font-semibold leading-6 text-neutral-800">
         {label}
       </label>
       <input
         type="text"
         placeholder={placeholder}
-        className={`px-3 py-2 mt-2 text-sm leading-6 bg-white rounded-lg border border-solid border-neutral-200 text-zinc-600 ${className}`}
+        className={`px-3 py-2 mt-2 text-sm leading-6 font-montserrat bg-white rounded-lg border border-solid border-neutral-200 text-zinc-600 ${className}`}
       />
     </div>
   );
@@ -21,10 +21,10 @@ function InputField({ label, placeholder, className }) {
 
 function PhoneInputField() {
   return (
-    <div className="flex flex-col mt-6 max-w-full">
+    <div className="flex flex-col mt-6 max-w-full ">
       <label
         htmlFor="phoneNumber"
-        className="text-xl font-semibold leading-6 text-neutral-800"
+        className="text-xl font-semibold leading-6 font-abhaya-libre text-neutral-800"
       >
         Contact Number*
       </label>
@@ -36,7 +36,7 @@ function PhoneInputField() {
           type="tel"
           id="phoneNumber"
           placeholder="Enter Contact Number"
-          className="flex-1 px-3 py-2 bg-white rounded-lg border border-solid border-neutral-200"
+          className="flex-1 px-3 py-2 font-montserrat bg-white rounded-lg border border-solid border-neutral-200"
         />
       </div>
     </div>
@@ -45,18 +45,18 @@ function PhoneInputField() {
 
 function TextAreaField() {
   return (
-    <div className="">
+    <div className=" ">
       <div className="flex flex-col mt-6 max-w-full">
         <label
           htmlFor="message"
-          className="text-xl font-semibold leading-6 text-neutral-800"
+          className="text-xl font-abhaya-libre font-semibold leading-6 text-neutral-800"
         >
           How Can We Help You?
         </label>
         <textarea
           id="message"
           placeholder="Write Messages..."
-          className="px-3 py-2 mt-2 text-sm leading-6 bg-white rounded-lg border border-solid border-neutral-200 text-zinc-600"
+          className="px-3 py-2 mt-2 font-montserrat text-sm leading-6 bg-white rounded-lg border border-solid border-neutral-200 text-zinc-600"
         ></textarea>
       </div>
     </div>
