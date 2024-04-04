@@ -1,25 +1,44 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import React from "react";
+import React, { useState } from "react";
 import contact from "../asset/contacttext.png";
 import contactmobile from "../asset/contacttextmobile.png";
 
-function InputField({ label, placeholder, className }) {
+function InputField({ label, placeholder, name, formData, setFormData }) {
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
   return (
-    <div className="flex flex-col  font-abhaya-libre">
+    <div className="flex flex-col font-abhaya-libre">
       <label className="text-xl font-semibold leading-6 text-neutral-800">
         {label}
       </label>
       <input
         type="text"
         placeholder={placeholder}
-        className={`px-3 py-2 mt-2 text-sm leading-6 font-montserrat bg-white rounded-lg border border-solid border-neutral-200 text-zinc-600 ${className}`}
+        name={name}
+        value={formData[name]}
+        onChange={handleChange}
+        className="px-3 py-2 mt-2 text-sm leading-6 bg-white rounded-lg border border-solid border-neutral-200 text-zinc-600 font-montserrat"
       />
     </div>
   );
 }
 
-function PhoneInputField() {
+function PhoneInputField({ formData, setFormData }) {
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
   return (
     <div className="flex flex-col mt-6 max-w-full ">
       <label
@@ -35,7 +54,10 @@ function PhoneInputField() {
         <input
           type="tel"
           id="phoneNumber"
+          name="phoneNumber"
           placeholder="Enter Contact Number"
+          value={formData.phoneNumber}
+          onChange={handleChange}
           className="flex-1 px-3 py-2 font-montserrat bg-white rounded-lg border border-solid border-neutral-200"
         />
       </div>
@@ -43,7 +65,15 @@ function PhoneInputField() {
   );
 }
 
-function TextAreaField() {
+function TextAreaField({ formData, setFormData }) {
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
   return (
     <div className=" ">
       <div className="flex flex-col mt-6 max-w-full">
@@ -55,7 +85,10 @@ function TextAreaField() {
         </label>
         <textarea
           id="message"
+          name="message"
           placeholder="Write Messages..."
+          value={formData.message}
+          onChange={handleChange}
           className="px-3 py-2 mt-2 font-montserrat text-sm leading-6 bg-white rounded-lg border border-solid border-neutral-200 text-zinc-600"
         ></textarea>
       </div>
@@ -64,32 +97,63 @@ function TextAreaField() {
 }
 
 function MyComponent() {
+  const [formData, setFormData] = useState({
+    name: "",
+    companyName: "",
+    email: "",
+    phoneNumber: "",
+    message: "",
+  });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Convert formData object to JSON string
+    const jsonData = JSON.stringify(formData);
+    // Log JSON data to the console
+    console.log(jsonData);
+  };
+
   return (
-    <div className="flex flex-col md:flex-row p-6 pr-15 ">
-      <div className=" md:w-2/5  items-center hidden md:flex justify-center">
+    <div className="flex flex-col md:flex-row p-6 pr-15">
+      <div className="md:w-2/5 items-center hidden md:flex justify-center">
         <img src={contact} alt="mmmmmmmmmmmmmm" />
       </div>
       <div>
-        <img src={contactmobile} alt="contact mobile" className="md:hidden " />
+        <img src={contactmobile} alt="contact mobile" className="md:hidden" />
       </div>
-      <div className="flex flex-col md:w-3/5 p-16 justify-center   rounded-3xl bg-zinc-50 max-w-full">
-        <form className="flex flex-col max-w-full pr-10">
+      <div className="flex flex-col md:w-3/5 p-16 justify-center rounded-3xl bg-zinc-50 max-w-full">
+        <form
+          className="flex flex-col max-w-full pr-10"
+          onSubmit={handleSubmit}
+        >
           <div className="flex gap-5 flex-wrap">
-            <InputField label="Your Name*" placeholder="Enter Your Name" />
+            <InputField
+              label="Your Name*"
+              placeholder="Enter Your Name"
+              name="name"
+              formData={formData}
+              setFormData={setFormData}
+            />
             <InputField
               label="Company Name*"
               placeholder="Enter Company Name"
+              name="companyName"
+              formData={formData}
+              setFormData={setFormData}
             />
           </div>
           <div className="flex flex-col mt-6 max-w-full">
             <InputField
               label="Work Email ID*"
               placeholder="abc@company.com"
+              name="email"
+              formData={formData}
+              setFormData={setFormData}
               className="whitespace-nowrap"
             />
           </div>
-          <PhoneInputField />
-          <TextAreaField />
+          <PhoneInputField formData={formData} setFormData={setFormData} />
+          <TextAreaField formData={formData} setFormData={setFormData} />
           <button
             type="submit"
             className="justify-center items-center p-4 mt-14 text-lg font-semibold text-white bg-emerald-500 rounded-lg max-w-full focus:outline-none"
