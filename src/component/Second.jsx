@@ -1,5 +1,6 @@
 import { Button, Card } from "flowbite-react";
 import serviqrr from "../asset/serviqr.png";
+
 import first from "../asset/first.png";
 import features from "../asset/features.svg";
 function Second() {

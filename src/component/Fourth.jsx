@@ -7,23 +7,23 @@ import customersupport from "../asset/customersupport.svg";
 function Fourth() {
   return (
     <Card className="border-none shadow-none">
-      <div className="flex flex-row mt-20 pt-20 items-center justify-centre">
-        <div className="flex flex-col w-1/2 justify-center items-center">
-          <div className="font-abhaya-libre  text-4xl  w-3/4">
+      <div className="flex flex-col md:flex-row mt-20 pt-20 items-center justify-centre">
+        <div className="flex flex-col  w-full md:w-1/2 justify-center items-center">
+          <div className="font-abhaya-libre text-3xl md:text-4xl  w-3/4">
             <p>Automate your Customer Engagement through</p>
           </div>
-          <div className="font-montserrat text-xl mt-10 w-3/4 ">
+          <div className="font-montserrat text-l md:text-xl mt-10 w-3/4 ">
             <p>Automate Marketing, Sales </p>
             <p>& Customer Support.</p>
           </div>
 
-          <div className="flex w-3/4 mt-10">
+          <div className="flex mt-10">
             <Button color="success">Request a Demo</Button>
           </div>
         </div>
-        <div className="w-1/2 ">
-          <div className="flex flex-row justify-center items-center">
-            <div className="flex flex-col w-1/2 ">
+        <div className="md:w-1/2 w-full  mt-10">
+          <div className="flex flex-col md:flex-row justify-center items-center ">
+            <div className="flex flex-col   w-1/2 ">
               <img src={frame} alt="Your Image" className="w-20" />
               <p className="font-abhaya-libre text-xl/9">Marketing</p>
 
@@ -34,7 +34,7 @@ function Fourth() {
                 <p>full- funnel conversions</p>
               </div>
             </div>
-            <div className="flex flex-col ">
+            <div className="flex flex-col w-1/2 ">
               <img src={sales} alt="Your Image" className="w-20" />
               <p className="font-abhaya-libre text-xl/9">Marketing</p>
 
@@ -47,8 +47,8 @@ function Fourth() {
               </div>
             </div>
           </div>
-          <div className="flex flex-row justify-center mt-8">
-            <div className="flex flex-col w-1/2 ">
+          <div className="flex flex-col md:flex-row justify-center items-centre ">
+            <div className="flex flex-col   w-1/2 ">
               <img src={customersupport} alt="Your Image" className="w-20" />
               <p className="font-abhaya-libre text-xl/9">Marketing</p>
 
@@ -59,7 +59,7 @@ function Fourth() {
                 <p>support.</p>
               </div>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col w-1/2">
               <img src={ecommerce} alt="Your Image" className="w-20" />
               <p className="font-abhaya-libre text-xl/9">Marketing</p>
 

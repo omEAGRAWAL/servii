@@ -6,6 +6,7 @@ import "./App.css";
 import Fourth from "./component/Fourth.jsx";
 import Second from "./component/Second.jsx";
 import Third from "./component/Third.jsx";
+import Formpage from "./component/Formpage.jsx";
 import Firstsection from "./component/Firstsection.jsx";
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
       <Header />
       <Second />
       <Fourth />
-      {/* <Third /> */}
+      <Formpage />
+     
     </div>
   );
 }
