@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { Card, Button } from "flowbite-react";
+import frame from "../asset/Frame.png";
 
 function Fourth() {
   return (
@@ -23,7 +24,11 @@ function Fourth() {
           </div>
         </div>
         <div size="l" className="w-1/2 ">
-          eunfnehbh
+          <Card className="shadow-none border-none ">
+            <div className="flex justify-center">
+              <img src={frame} alt="Your Image" className=" " />
+            </div>
+          </Card>
         </div>
       </div>
     </Card>

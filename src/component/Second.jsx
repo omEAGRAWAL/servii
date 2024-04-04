@@ -1,6 +1,7 @@
 import { Button, Card } from "flowbite-react";
-import whata from "../asset/image66.png";
 import serviqrr from "../asset/serviqr.png";
+import first from "../asset/first.png";
+import features from "../asset/features.svg";
 function Second() {
   return (
     <div>
@@ -51,7 +52,7 @@ function Second() {
       <Card className="shadow-none border-none pt-20 mt-20 ">
         <div className="flex justify-center">
           <img
-            src="https://framerusercontent.com/images/D6CTA1pnxhaC0a4Nhx7rUtxz4.png" // Replace with the path to your image file
+            src={first} // Replace with the path to your image file
             alt="Your Image"
             className="w-4/5"
           />
@@ -77,6 +78,15 @@ function Second() {
         >
           <img
             src="https://framerusercontent.com/images/9jaqMQyANO7SAifdJ2rrbJHeAw.png?scale-down-to=1024" // Replace with the path to your image file
+            alt="Your Image"
+            className="w-4/5 pt-20 mt-20 md-20 "
+          />
+        </div>
+      </Card>
+      <Card className="shadow-none border-none ">
+        <div className="flex justify-center">
+          <img
+            src={features}
             alt="Your Image"
             className="w-4/5 pt-20 mt-20 md-20 "
           />
