@@ -7,7 +7,12 @@ export default {
   ],
   theme: {
     
-    extend: {},
+    extend: {
+      fontFamily: {
+        'abhaya-libre': ['Abhaya Libre', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+      },
+    },
     plugins: [import("flowbite/plugin")],
   },
 };
