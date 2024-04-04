@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
+
 import React, { useState } from "react";
 import contact from "../asset/contacttext.png";
 import contactmobile from "../asset/contacttextmobile.png";
@@ -113,6 +114,27 @@ function MyComponent() {
     console.log(jsonData);
   };
 
+  const handleSubmitbutton = async (e) => {
+    e.preventDefault();
+
+    try {
+      const res = await fetch("http://localhost:3000/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      const data = await res.json();
+      if (data.success === false) {
+        // dispatch(signInFailure(data.message));
+      } else {
+        console.log(data);
+        // navigate("/");
+      }
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
   return (
     <div className="flex flex-col md:flex-row p-6 pr-15">
       <div className="md:w-2/5 items-center hidden md:flex justify-center">
@@ -156,6 +178,7 @@ function MyComponent() {
           <TextAreaField formData={formData} setFormData={setFormData} />
           <button
             type="submit"
+            onClick={handleSubmitbutton}
             className="justify-center items-center p-4 mt-14 text-lg font-semibold text-white bg-emerald-500 rounded-lg max-w-full focus:outline-none"
           >
             Lets Talk!
