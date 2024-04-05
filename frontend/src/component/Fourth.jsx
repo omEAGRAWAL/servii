@@ -6,7 +6,7 @@ import customersupport from "../asset/customersupport.svg";
 
 function Fourth() {
   return (
-    <Card className="border-none shadow-none">
+    <Card className="border-none shadow-none bg-white text-black">
       <div className="flex flex-col md:flex-row mt-20 pt-20 items-center justify-centre">
         <div className="flex flex-col  w-full md:w-1/2 justify-center items-center">
           <div className="font-abhaya-libre text-3xl md:text-4xl  w-3/4">

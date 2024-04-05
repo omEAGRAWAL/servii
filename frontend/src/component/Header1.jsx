@@ -4,8 +4,8 @@ import "tailwindcss/tailwind.css";
 
 function Header1() {
   return (
-    <Navbar className=" flex gap-2 md:order-2 ">
-      <NavbarBrand>
+    <Navbar className="flex  gap-2 md:order-2 bg-white text-black border-b-2 ">
+      <NavbarBrand className="bg-white text-black">
         <img
           src={logo}
           alt="Logo"
@@ -14,16 +14,14 @@ function Header1() {
           "
         />
       </NavbarBrand>
-      <div className="flex   gap-2 md:order-2  ">
+      <div className="flex  bg-white text-black  gap-2 md:order-2  ">
         <Button color="success" className="bg-[#12bf7c]">
           Book a demo
         </Button>
 
-        <Navbar.Toggle />
-        
-       
+        <Navbar.Toggle className="bg-white text-black" />
       </div>
-      <Navbar.Collapse>
+      <Navbar.Collapse className=" bg-white text-black">
         <Navbar.Link href="#">Home</Navbar.Link>
         <Navbar.Link href="#">Solutions</Navbar.Link>
         <Navbar.Link href="#">Features</Navbar.Link>

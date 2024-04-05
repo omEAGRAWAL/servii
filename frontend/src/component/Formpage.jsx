@@ -96,7 +96,6 @@ function TextAreaField({ formData, setFormData }) {
     </div>
   );
 }
-
 function MyComponent() {
   const [formData, setFormData] = useState({
     name: "",
@@ -136,19 +135,16 @@ function MyComponent() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row p-6 pr-15">
+    <div className="flex flex-col md:flex-row p-5 pr-15 mt-15">
       <div className="md:w-2/5 items-center hidden md:flex justify-center">
         <img src={contact} alt="mmmmmmmmmmmmmm" />
       </div>
       <div>
         <img src={contactmobile} alt="contact mobile" className="md:hidden" />
       </div>
-      <div className="flex flex-col md:w-3/5 p-16 justify-center rounded-3xl bg-zinc-50 max-w-full">
-        <form
-          className="flex flex-col max-w-full pr-10"
-          onSubmit={handleSubmit}
-        >
-          <div className="flex gap-5 flex-wrap">
+      <div className="flex flex-col md:w-3/5 p-5 md:p-16  justify-center rounded-3xl bg-zinc-50 max-w-full">
+        <form className="flex flex-col max-w-full pr-5" onSubmit={handleSubmit}>
+          <div className="flex gap-5 flex-col md:flex-row flex-nowrap md:flex-wrap  ">
             <InputField
               label="Your Name*"
               placeholder="Enter Your Name"
@@ -179,7 +175,7 @@ function MyComponent() {
           <button
             type="submit"
             onClick={handleSubmitbutton}
-            className="justify-center items-center p-4 mt-14 text-lg font-semibold text-white bg-emerald-500 rounded-lg max-w-full focus:outline-none"
+            className="justify-center items-center p-4  mt-14 text-lg font-semibold text-white bg-emerald-500 rounded-lg max-w-full focus:outline-none"
           >
             Lets Talk!
           </button>

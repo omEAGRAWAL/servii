@@ -35,7 +35,7 @@ const schema = new mongoose.Schema({
 
 const Contact = mongoose.model("Contact", schema);
 
-app.post("/api/contact", (req, res) => {
+app.post("/api/contact", async (req, res) => {
   const contact = new Contact({
     name: req.body.name,
     companyName: req.body.companyName,
@@ -48,4 +48,29 @@ app.post("/api/contact", (req, res) => {
       message: "Contact added successfully",
     });
   });
+  const data = req.body;
+  console.log(data);
+  try {
+    const response = await fetch(
+      "https://script.google.com/macros/s/AKfycbwFJud8M9lD_8guYmQkdax8yDRYEk-Q54RjEwUnnxFZXH6w4y5Y5Uyj4IMshxJMjQE/exec",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" }, // Specify content type
+        body: data, // Send data as JSON
+      }
+    );
+
+    // Check if the response status is 200 (OK)
+    if (response.status === 200) {
+      console.log(response);
+      console.log("Form data submitted successfully!");
+      // Optionally, clear the form or display a success message
+    } else {
+      // If the response status is not 200, throw an error
+      throw new Error("Failed to submit form");
+    }
+  } catch (error) {
+    console.error("Error submitting form:", error);
+    // Handle errors (e.g., display an error message)
+  }
 });

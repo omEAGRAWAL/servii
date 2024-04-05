@@ -6,12 +6,12 @@ export default {
     "node_modules/flowbite-react/lib/esm/**/*.js",
   ],
   theme: {
-    
     extend: {
       fontFamily: {
-        'abhaya-libre': ['Abhaya Libre', 'sans-serif'],
-        montserrat: ['Montserrat', 'sans-serif'],
+        "abhaya-libre": ["Abhaya Libre", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
       },
+      darkMode: false,
     },
     plugins: [import("flowbite/plugin")],
   },
