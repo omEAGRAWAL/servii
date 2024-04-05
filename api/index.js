@@ -1,4 +1,5 @@
 //create a server to do login
+
 const express = require("express");
 const path = require("path");
 const bodyParser = require("body-parser");
@@ -9,6 +10,7 @@ const mongoose = require("mongoose");
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
+
 //host on port 3000
 app.listen(3000, () => {
   console.log("Server started on port 3000");
@@ -24,8 +26,6 @@ mongoose
   .catch((err) => {
     console.log("Connection failed", err);
   });
-
-  const __dirname = path.resolve();
 
 const schema = new mongoose.Schema({
   name: String,
@@ -126,9 +126,7 @@ app.put("/api/terms/:id", async (req, res) => {
   }
 });
 
-
 app.use(express.static(path.join(__dirname, "/client/dist")));
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "/client/dist/index.html"));
+  res.sendFile(path.join(__dirname, "client", "dist", "index.html"));
 });
-
