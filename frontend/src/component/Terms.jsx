@@ -6,12 +6,10 @@ export default function Terms() {
   const [formData, setFormData] = useState([]);
   const [updataeid, setupdataeid] = useState("");
 
-  
-
   useEffect(() => {
     const getTerms = async () => {
       try {
-        const data = await fetch("http://localhost:3000/api/terms", {
+        const data = await fetch("api/terms", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -34,7 +32,6 @@ export default function Terms() {
   return (
     <div>
       {/* Map over the formdata to display */}
-
 
       <>{formData[0].title}</>
       {formData.map((data) => {
