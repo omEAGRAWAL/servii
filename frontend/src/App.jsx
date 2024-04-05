@@ -9,6 +9,7 @@ import Formpage from "./component/Formpage.jsx";
 import Firstsection from "./component/Firstsection.jsx";
 import Fifth from "./component/Fifth.jsx";
 import Kndustries from "./component/Kndustries.jsx";
+import FAQ from "./component/FAQ.jsx";
 function App() {
   // eslint-disable-next-line no-unused-vars
   const [count, setCount] = useState(0);
@@ -20,7 +21,9 @@ function App() {
       <Fourth />
       <Fifth />
       <Kndustries />
+
       <Formpage />
+      <FAQ />
     </div>
   );
 }

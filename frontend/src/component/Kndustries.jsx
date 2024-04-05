@@ -15,85 +15,97 @@ function Industries() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row p-5 md:p-20 mt-20 items-center justify-center">
-      <div className="w-1/2 flex flex-col justify-center items-center">
-        <div className="font-abhaya-libre text-2xl md:text-3xl lg:text-4xl font-semibold  p-20 ">
-          <p>Custom WhatsApp Solutionsfor Industries</p>
+    <div className="flex flex-col md:flex-row p-5 md:m-20 mt-20 items-center justify-center bg-green-50">
+      <div className="md:w-1/2 flex flex-col justify-center items-center">
+        <div>
+          <label className="text-[#12BF7C] border font-montserrat bg-white border-gray-300 rounded m-5 md:m-20 p-1 ">
+            Industries
+          </label>
+
+          <div className="font-abhaya-libre text-2xl md:text-3xl lg:text-4xl font-semibold p-5 md:p-20 ">
+            <p>Custom WhatsApp Solutionsfor Industries</p>
+          </div>
         </div>
 
         {/* button sextion */}
 
-        <div className="flex flex-wrap ">
-          <div className=" ">
+        <div className="flex flex-wrap justify-center font-abhaya-libre  ">
+          <div className=" w-1/3 md:w-1/2 p-2  ">
             <Button
+              size={"xl"}
               outline
               gradientDuoTone="purpleToBlue"
-              className="   rounded-tl-12  from-black  via-emerald-500 to-black bg-gradient-to-l"
-              onClick={() => handleButtonClick("automotive")}
+              className=" w-full   rounded-tl-12  from-black  via-emerald-500 to-black bg-gradient-to-l"
+              onClick={() => handleButtonClick("Automotive")}
             >
-              automotive
+              Automotive
             </Button>
           </div>
-          <div className=" ">
+          <div className=" w-1/3 md:w-1/2 p-2">
             {" "}
             <Button
+              size={"xl"}
               outline
               gradientDuoTone="purpleToBlue"
-              className="  from-black via-emerald-500 to-black bg-gradient-to-l"
+              className="w-full  from-black via-emerald-500 to-black bg-gradient-to-l"
               onClick={() => handleButtonClick("ecommerce")}
             >
-              ecommerce
+              Ecommerce
             </Button>
           </div>
-          <div className="">
+          <div className="w-1/3 md:w-1/2 p-2">
             {" "}
             <Button
+              size={"xl"}
               outline
               gradientDuoTone="purpleToBlue"
-              className=" from-black via-emerald-500 to-black bg-gradient-to-l"
+              className="w-full from-black via-emerald-500 to-black bg-gradient-to-l"
               onClick={() => handleButtonClick("education")}
             >
-              education
+              Education
             </Button>
           </div>
-          <div className="">
+          <div className="w-1/3 md:w-1/2 p-2">
             {" "}
             <Button
+              size={"xl"}
               outline
               gradientDuoTone="purpleToBlue"
-              className=" from-black via-emerald-500 to-black bg-gradient-to-l"
+              className="w-full from-black via-emerald-500 to-black bg-gradient-to-l"
               onClick={() => handleButtonClick("fintech")}
             >
-              fintech
+              Fintech
             </Button>
           </div>
-          <div className="">
+          <div className="w-1/3 md:w-1/2 p-2">
             {" "}
             <Button
+              size={"xl"}
               outline
               gradientDuoTone="purpleToBlue"
-              className=" from-black via-emerald-500 to-black bg-gradient-to-l"
+              className="w-full from-black via-emerald-500 to-black bg-gradient-to-l"
               onClick={() => handleButtonClick("restaurants")}
             >
-              restaurants
+              Restaurants
             </Button>
           </div>
-          <div className="">
+          <div className="w-1/3 md:w-1/2 p-2">
             {" "}
             <Button
+              size={"xl"}
               outline
               gradientDuoTone="purpleToBlue"
-              className=" from-black via-emerald-500 to-black bg-gradient-to-l"
+              className="w-full from-black via-emerald-500 to-black bg-gradient-to-l"
               onClick={() => handleButtonClick("retail")}
             >
-              retail
+              Retail
             </Button>
           </div>
         </div>
       </div>
 
       {/* image section */}
-      <div className="md:w-1/2">
+      <div className="md:w-1/2 mt-5  md:p-10 md:m-10">
         {activeDiv === "automotive" && (
           <div>
             <div className="">
@@ -103,7 +115,7 @@ function Industries() {
                 by the WhatsApp Business API, are custom-designed to address the
                 unique requirements of diverse industry sectors.
               </p>
-              <img className="  pt-5" src={automotive} alt="" />
+              <img className="  pt-10" src={automotive} alt="" />
             </div>
           </div>
         )}
@@ -117,7 +129,7 @@ function Industries() {
                 by the WhatsApp Business API, are custom-designed to address the
                 unique requirements of diverse industry sectors.
               </p>
-              <img className="  pt-5" src={ecommerce} alt="" />
+              <img className="  pt-10" src={ecommerce} alt="" />
             </div>
           </div>
         )}
@@ -130,7 +142,7 @@ function Industries() {
                 by the WhatsApp Business API, are custom-designed to address the
                 unique requirements of diverse industry sectors.
               </p>
-              <img className="  pt-5" src={education} alt="" />
+              <img className="  pt-10" src={education} alt="" />
             </div>
           </div>
         )}
@@ -143,7 +155,7 @@ function Industries() {
                 by the WhatsApp Business API, are custom-designed to address the
                 unique requirements of diverse industry sectors.
               </p>
-              <img className="  md:pt-5" src={fintech} alt="" />
+              <img className="  pt-10" src={fintech} alt="" />
             </div>
           </div>
         )}
@@ -156,7 +168,7 @@ function Industries() {
                 by the WhatsApp Business API, are custom-designed to address the
                 unique requirements of diverse industry sectors.
               </p>
-              <img className="  pt-5" src={restaurants} alt="" />
+              <img className="  pt-10" src={restaurants} alt="" />
             </div>
           </div>
         )}
@@ -169,7 +181,7 @@ function Industries() {
                 by the WhatsApp Business API, are custom-designed to address the
                 unique requirements of diverse industry sectors.
               </p>
-              <img className=" pt-5" src={retail} alt="" />
+              <img className=" pt-10" src={retail} alt="" />
             </div>
           </div>
         )}

@@ -1,5 +1,7 @@
 /* eslint-disable no-unused-vars */
 // import React from "react";
+import { MdOutlineArrowOutward } from "react-icons/md";
+import { Button } from "flowbite-react";
 import frame from "../asset/featuresnew.png";
 import framemobile from "../asset/Framemobile.png";
 import solution from "../asset/solution1desk.png";
@@ -11,7 +13,7 @@ function Fifth() {
     <div className="flex justify-center items-center flex-col">
       <div className="pt-10 mt-10">
         <div>
-          <img src={solution} alt="solution  "  className="hidden md:flex p-5"/>
+          <img src={solution} alt="solution  " className="hidden md:flex p-5" />
         </div>
         <div>
           <img
@@ -28,6 +30,9 @@ function Fifth() {
       <div className="  md:hidden mt-10 pt-5 ">
         <img src={framemobile} alt="" className="p-5" />
       </div>
+      <Button className="bg-green-600">
+        Request a Demo <MdOutlineArrowOutward className="m-1 ml-2" />
+      </Button>
 
       <div className=" mt-10">
         <div className="">

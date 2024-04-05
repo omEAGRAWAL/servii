@@ -24,7 +24,7 @@ function Second() {
           <div className="pt-12">
             <Button color="success" className="bg-[#12bf7c]" size="xl">
               Book a Demo
-              <FaArrowRight className="transform rotate-270 ml-2" />
+              <FaArrowRight className="transform rotate-270 m-1 ml-2" />
             </Button>
           </div>
         </div>
