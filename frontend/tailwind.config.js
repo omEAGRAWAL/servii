@@ -5,6 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
     "node_modules/flowbite-react/lib/esm/**/*.js",
   ],
+  darkMode: "false", // or 'media' or 'class'
   theme: {
     extend: {
       fontFamily: {

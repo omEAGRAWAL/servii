@@ -33,7 +33,13 @@ const schema = new mongoose.Schema({
   message: String,
 });
 
+const terms = new mongoose.Schema({
+  title: String,
+  content: String,
+});
+
 const Contact = mongoose.model("Contact", schema);
+const Terms = mongoose.model("Terms", terms);
 
 app.post("/api/contact", async (req, res) => {
   const contact = new Contact({
@@ -69,6 +75,49 @@ app.post("/api/contact", async (req, res) => {
       // If the response status is not 200, throw an error
       throw new Error("Failed to submit form");
     }
+  } catch (error) {
+    console.error("Error submitting form:", error);
+    // Handle errors (e.g., display an error message)
+  }
+});
+
+app.post("/api/terms", async (req, res) => {
+  try {
+    const terms = new Terms({
+      title: req.body.title,
+      content: req.body.content,
+    });
+    terms.save().then((result) => {
+      res.status(201).json({
+        message: "Terms added successfully",
+      });
+    });
+  } catch (error) {
+    console.error("Error submitting form:", error);
+    // Handle errors (e.g., display an error message)
+  }
+});
+
+app.get("/api/terms", async (req, res) => {
+  try {
+    const terms = await Terms.find();
+    res.status(200).json(terms);
+  } catch (error) {
+    console.error("Error submitting form:", error);
+    // Handle errors (e.g., display an error message)
+  }
+});
+// we need to update the terms using the _id
+app.put("/api/terms/:id", async (req, res) => {
+  try {
+    const terms = await Terms.findById(req.params.id);
+    terms.title = req.body.title;
+    terms.content = req.body.content;
+    terms.save().then((result) => {
+      res.status(201).json({
+        message: "Terms updated successfully",
+      });
+    });
   } catch (error) {
     console.error("Error submitting form:", error);
     // Handle errors (e.g., display an error message)

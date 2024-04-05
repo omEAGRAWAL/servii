@@ -6,10 +6,10 @@ import "./App.css";
 import Fourth from "./component/Fourth.jsx";
 import Second from "./component/Second.jsx";
 import Formpage from "./component/Formpage.jsx";
-import Firstsection from "./component/Firstsection.jsx";
 import Fifth from "./component/Fifth.jsx";
 import Kndustries from "./component/Kndustries.jsx";
 import FAQ from "./component/FAQ.jsx";
+import Terms from "./component/Terms.jsx";
 function App() {
   // eslint-disable-next-line no-unused-vars
   const [count, setCount] = useState(0);
@@ -23,7 +23,8 @@ function App() {
       <Kndustries />
 
       <Formpage />
-      <FAQ />
+      {/* <FAQ /> */}
+      {/* <Terms /> */}
     </div>
   );
 }
