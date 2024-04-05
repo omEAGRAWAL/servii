@@ -1,6 +1,6 @@
 //create a server to do login
 const express = require("express");
-import path from "path";
+const path = require("path");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const jwt = require("jsonwebtoken");
