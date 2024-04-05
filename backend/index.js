@@ -1,6 +1,6 @@
 //create a server to do login
 const express = require("express");
-
+import path from "path";
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const jwt = require("jsonwebtoken");
@@ -24,6 +24,8 @@ mongoose
   .catch((err) => {
     console.log("Connection failed", err);
   });
+
+  const __dirname = path.resolve();
 
 const schema = new mongoose.Schema({
   name: String,
@@ -123,3 +125,10 @@ app.put("/api/terms/:id", async (req, res) => {
     // Handle errors (e.g., display an error message)
   }
 });
+
+
+app.use(express.static(path.join(__dirname, "/frontend/dist")));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "/frontend/dist/index.html"));
+});
+
