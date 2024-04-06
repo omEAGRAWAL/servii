@@ -126,6 +126,21 @@ app.put("/api/terms/:id", async (req, res) => {
   }
 });
 
+// to delete a term
+app.delete("/api/terms/:id", async (req, res) => {
+  try {
+    const terms = await Terms.findById(req.params.id);
+    terms.delete().then((result) => {
+      res.status(201).json({
+        message: "Terms deleted successfully",
+      });
+    });
+  } catch (error) {
+    console.error("Error submitting form:", error);
+    // Handle errors (e.g., display an error message)
+  }
+});
+
 app.use(express.static(path.join(__dirname, "/client/dist")));
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "client", "dist", "index.html"));

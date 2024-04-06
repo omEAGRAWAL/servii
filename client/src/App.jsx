@@ -24,7 +24,7 @@ function App() {
 
       <Formpage />
       {/* <FAQ /> */}
-      {/* <Terms /> */}
+      <Terms />
     </div>
   );
 }

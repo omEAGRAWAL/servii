@@ -15,7 +15,7 @@ function Industries() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row p-5 md:m-20 mt-20 items-center justify-center bg-green-50">
+    <div className="flex flex-col md:flex-row p-5 md:m-20 mt-20 items-center justify-center bg-[#FAFFFA]">
       <div className="md:w-1/2 flex flex-col justify-center items-center">
         <div>
           <label className="text-[#12BF7C] border font-montserrat bg-white border-gray-300 rounded m-5 md:m-20 p-1 ">
@@ -29,77 +29,58 @@ function Industries() {
 
         {/* button sextion */}
 
-        <div className="flex flex-wrap justify-center font-abhaya-libre  ">
-          <div className=" w-1/3 md:w-1/2 p-2  ">
-            <Button
-              size={"xl"}
-              outline
-              gradientDuoTone="purpleToBlue"
-              className=" w-full   rounded-tl-12  from-black  via-emerald-500 to-black bg-gradient-to-l"
-              onClick={() => handleButtonClick("Automotive")}
+        <div className="flex flex-wrap justify-center font-abhaya-libre  text-gray-800   font-medium ">
+          <div className=" w-1/3 md:w-1/2  p-2    h-20">
+            <button
+              className=" w-full h-full bg-white  text-2xl rounded-xl  hover:text-white   from-black  via-emerald-500 to-black hover:bg-gradient-to-l"
+              onClick={() => handleButtonClick("automotive")}
             >
               Automotive
-            </Button>
+            </button>
           </div>
-          <div className=" w-1/3 md:w-1/2 p-2">
-            {" "}
-            <Button
-              size={"xl"}
-              outline
-              gradientDuoTone="purpleToBlue"
-              className="w-full  from-black via-emerald-500 to-black bg-gradient-to-l"
+          <div className=" w-1/3 h-20  md:w-1/2  p-2">
+            <button
+              className=" w-full h-full bg-white text-black-500 text-2xl rounded-xl from-black  via-emerald-500 to-black hover:bg-gradient-to-l  "
               onClick={() => handleButtonClick("ecommerce")}
             >
               Ecommerce
-            </Button>
+            </button>
           </div>
-          <div className="w-1/3 md:w-1/2 p-2">
+          <div className="w-1/3 h-20 md:w-1/2 p-2">
             {" "}
-            <Button
-              size={"xl"}
-              outline
-              gradientDuoTone="purpleToBlue"
-              className="w-full from-black via-emerald-500 to-black bg-gradient-to-l"
+            <button
+              className=" w-full h-full bg-white text-black-500 text-2xl rounded-xl from-black  via-emerald-500 to-black hover:bg-gradient-to-l hover:text-white "
               onClick={() => handleButtonClick("education")}
             >
               Education
-            </Button>
+            </button>
           </div>
           <div className="w-1/3 md:w-1/2 p-2">
             {" "}
-            <Button
-              size={"xl"}
-              outline
-              gradientDuoTone="purpleToBlue"
-              className="w-full from-black via-emerald-500 to-black bg-gradient-to-l"
+            <button
+              className=" w-full h-full bg-white text-black-500 text-2xl rounded-xl from-black  via-emerald-500 to-black hover:bg-gradient-to-l hover:text-white "
               onClick={() => handleButtonClick("fintech")}
             >
               Fintech
-            </Button>
+            </button>
           </div>
-          <div className="w-1/3 md:w-1/2 p-2">
+          <div className="w-1/3  h-20 md:w-1/2 p-2">
             {" "}
-            <Button
-              size={"xl"}
-              outline
-              gradientDuoTone="purpleToBlue"
-              className="w-full from-black via-emerald-500 to-black bg-gradient-to-l"
+            <button
+              className=" w-full h-full bg-white text-black-500 text-2xl rounded-xl from-black  via-emerald-500 to-black hover:bg-gradient-to-l hover:text-white "
               onClick={() => handleButtonClick("restaurants")}
             >
               Restaurants
-            </Button>
+            </button>
           </div>
           <div className="w-1/3 md:w-1/2 p-2">
             {" "}
-            <Button
-              size={"xl"}
-              outline
-              gradientDuoTone="purpleToBlue"
-              className="w-full from-black via-emerald-500 to-black bg-gradient-to-l"
+            <button
+              className=" w-full h-full bg-white text-black-500 text-2xl rounded-xl from-black  via-emerald-500 to-black hover:bg-gradient-to-l hover:text-white "
               onClick={() => handleButtonClick("retail")}
             >
               Retail
-            </Button>
+            </button>
           </div>
         </div>
       </div>
