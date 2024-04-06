@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import { Button } from "flowbite-react";
 import serviqrr from "../asset/serviqr.png";
@@ -18,43 +19,23 @@ function Second({ scrollToFormPage }) {
           height: "658px", // Adjust height as needed
           top: "100px", // Adjust position as needed
           left: "-260px",
-          // Adjust position as needed
           opacity: "0.06",
         }}
       ></div>
 
-      <div
-        className="absolute bg-cover "
+      {/* <div
+        className="bg-cover absolute "
         style={{
           backgroundImage: `url('${what}')`,
-          width: "489px", // Adjust width as needed
-          height: "489px", // Adjust height as needed
-          top: "247px",
-          right: "0",
-          opacity: "0.06",
-          "@media (max-width: 767px)": {
-            width: "150x", // Adjust width as needed
-            height: "150px",
-          },
-        }}
-      ></div>
 
-      <div
-        className="absolute bg-cover"
-        style={{
-          backgroundImage: `url('${what}')`,
           width: "489px", // Adjust width as needed
           height: "489px", // Adjust height as needed
-          top: "180px", // Adjust position as needed
-          left: "30%",
-          // Adjust position as needed
-          opacity: "0.06",
-          "@media (max-width: 767px)": {
-            width: "50x", // Adjust width as needed
-            height: "50px",
-          },
+          // top: "247px",
+          // left: "75vw",
+
+          opacity: "0.6",
         }}
-      ></div>
+      ></div> */}
 
       <div
         className="flex flex-col items-center bg-no-repeat justify-center

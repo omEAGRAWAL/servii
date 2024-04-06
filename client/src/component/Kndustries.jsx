@@ -16,20 +16,20 @@ function Industries() {
 
   return (
     <div className="flex flex-col md:flex-row p-5 md:m-20 mt-20 items-center justify-center bg-[#FAFFFA]">
-      <div className="md:w-1/2 flex flex-col justify-center items-center">
-        <div>
-          <label className="text-[#12BF7C] border font-montserrat bg-white border-gray-300 rounded m-5 md:m-20 p-1 ">
+      <div className="md:w-1/2 flex flex-col justify-center items-center m-10 mr-20 ">
+        <div className="md:m-5">
+          <label className="text-[#12BF7C] border font-montserrat bg-white border-gray-300 rounded   p-1 ">
             Industries
           </label>
 
-          <div className="font-abhaya-libre text-2xl md:text-3xl lg:text-4xl font-semibold p-5 md:p-20 ">
-            <p>Custom WhatsApp Solutionsfor Industries</p>
+          <div className="font-abhaya-libre text-2xl md:text-3xl lg:text-4xl font-semibold mt-20 pr-10 ">
+            <p>Custom WhatsApp Solutions for Industries</p>
           </div>
         </div>
 
         {/* button sextion */}
 
-        <div className="flex flex-wrap justify-center font-abhaya-libre  text-gray-800   font-medium ">
+        <div className="flex flex-wrap justify-center font-abhaya-libre  text-gray-600   font-medium m-5 ">
           <div className=" w-1/3 md:w-1/2  p-2    h-20">
             <button
               className=" w-full h-full bg-white  text-2xl rounded-xl  hover:text-white   from-black  via-emerald-500 to-black hover:bg-gradient-to-l"
@@ -40,7 +40,7 @@ function Industries() {
           </div>
           <div className=" w-1/3 h-20  md:w-1/2  p-2">
             <button
-              className=" w-full h-full bg-white text-black-500 text-2xl rounded-xl from-black  via-emerald-500 to-black hover:bg-gradient-to-l  "
+              className=" w-full h-full bg-white hover:text-white  text-2xl rounded-xl from-black  via-emerald-500 to-black hover:bg-gradient-to-l  "
               onClick={() => handleButtonClick("ecommerce")}
             >
               Ecommerce
@@ -86,7 +86,7 @@ function Industries() {
       </div>
 
       {/* image section */}
-      <div className="md:w-1/2 mt-5  md:p-10 md:m-10">
+      <div className="md:w-1/2 mt-5  mr-20">
         {activeDiv === "automotive" && (
           <div>
             <div className="">

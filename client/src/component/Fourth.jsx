@@ -1,4 +1,5 @@
-import { Card, Button } from "flowbite-react";
+/* eslint-disable react/prop-types */
+import { Button } from "flowbite-react";
 import frame from "../asset/Frame2157.svg";
 import sales from "../asset/sales.svg";
 import ecommerce from "../asset/ecommerce.svg";
@@ -7,21 +8,25 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 
 function Fourth({ scrollToFormPage }) {
   return (
-    <Card className="border-none shadow-none bg-white text-black">
+    <div className="p-20 m-0">
       <div className="flex flex-col md:flex-row mt-20 pt-20 items-center justify-centre">
-        <div className="flex flex-col  w-full md:w-1/2 md:m-20  ">
-          <div className="font-abhaya-libre text-3xl md:text-4xl  w-3/4">
+        <div className="flex flex-col   md:w-1/2 md:m-20  ">
+          <label className="text-[#349f50] border font-montserrat w-20 bg-white border-gray-300 rounded   text-sm ">
+            Solutions
+          </label>
+          <div className="font-abhaya-libre text-3xl md:text-4xl mt-10 w-3/4">
             <p>Automate your Customer Engagement through</p>
           </div>
-          <div className="font-montserrat text-l md:text-xl mt-10 w-3/4 ">
+          <div className="font-montserrat text-l md:text-xl mt-5 w-3/4 ">
             <p>Automate Marketing, Sales </p>
             <p>& Customer Support.</p>
           </div>
 
           <Button
             onClick={scrollToFormPage}
+            color="success"
             className="bg-[#12BF7C]
-             w-1/2 mt-10  "
+              mt-10 w-80 "
             size="xl"
           >
             Request a Demo <MdOutlineArrowOutward className="m-1 ml-2" />
@@ -80,7 +85,7 @@ function Fourth({ scrollToFormPage }) {
           </div>
         </div>
       </div>
-    </Card>
+    </div>
   );
 }
 

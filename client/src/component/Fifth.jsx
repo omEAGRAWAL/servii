@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 // import React from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
@@ -30,7 +31,12 @@ function Fifth({ scrollToFormPage }) {
       <div className="  md:hidden mt-10 pt-5 ">
         <img src={framemobile} alt="" className="p-5" />
       </div>
-      <Button className="bg-[#12BF7C] " size="xl" onClick={scrollToFormPage}>
+      <Button
+        color={"success"}
+        className="bg-[#12BF7C] "
+        size="xl"
+        onClick={scrollToFormPage}
+      >
         Request a Demo <MdOutlineArrowOutward className="m-1 ml-2" />
       </Button>
 

@@ -16,7 +16,7 @@ function InputField({ label, placeholder, name, formData, setFormData }) {
 
   return (
     <div className="flex flex-col font-abhaya-libre">
-      <label className="text-xl font-semibold leading-6 text-neutral-800">
+      <label className="text-xl font-semibold leading-6 text-neutral-700">
         {label}
       </label>
       <input
@@ -25,7 +25,7 @@ function InputField({ label, placeholder, name, formData, setFormData }) {
         name={name}
         value={formData[name]}
         onChange={handleChange}
-        className="px-3 py-2 mt-2 text-sm leading-6 bg-white rounded-lg border border-solid border-neutral-200 text-zinc-600 font-montserrat"
+        className="px-3 py-2 mt-2 text-s leading-6 bg-white rounded-lg border border-solid border-neutral-200 text-zinc-600 font-montserrat"
       />
     </div>
   );
@@ -135,16 +135,16 @@ function MyComponent() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row p-5 pr-15 mt-15">
-      <div className="md:w-2/5 items-center hidden md:flex justify-center">
+    <div className="flex flex-col md:flex-row p-20 m-5">
+      <div className=" items-center hidden md:flex justify-center">
         <img src={contact} alt="mmmmmmmmmmmmmm" />
       </div>
       <div>
         <img src={contactmobile} alt="contact mobile" className="md:hidden" />
       </div>
-      <div className="flex flex-col md:w-3/5 p-5 md:p-16  justify-center rounded-3xl bg-zinc-50 max-w-full">
+      <div className="flex flex-col md:w-3/5 ml-10  md:p-16  justify-center rounded-3xl bg-zinc-50 max-w-full">
         <form className="flex flex-col max-w-full pr-5" onSubmit={handleSubmit}>
-          <div className="flex gap-5 flex-col md:flex-row flex-nowrap md:flex-wrap  ">
+          <div className="flex  gap-5 flex-col md:flex-row flex-nowrap md:flex-wrap  ">
             <InputField
               label="Your Name*"
               placeholder="Enter Your Name"
