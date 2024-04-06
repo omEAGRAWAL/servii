@@ -8,7 +8,7 @@ import solution from "../asset/solution1desk.png";
 import solutionmobile from "../asset/solution1mobile.png";
 import integration from "../asset/integrationdesk.png";
 import integrationmobile from "../asset/integrationmobile.png";
-function Fifth() {
+function Fifth({ scrollToFormPage }) {
   return (
     <div className="flex justify-center items-center flex-col">
       <div className="pt-10 mt-10">
@@ -30,7 +30,7 @@ function Fifth() {
       <div className="  md:hidden mt-10 pt-5 ">
         <img src={framemobile} alt="" className="p-5" />
       </div>
-      <Button className="bg-green-600">
+      <Button className="bg-[#12BF7C] " size="xl" onClick={scrollToFormPage}>
         Request a Demo <MdOutlineArrowOutward className="m-1 ml-2" />
       </Button>
 

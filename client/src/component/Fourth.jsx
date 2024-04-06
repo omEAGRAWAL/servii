@@ -5,11 +5,11 @@ import ecommerce from "../asset/ecommerce.svg";
 import customersupport from "../asset/customersupport.svg";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
-function Fourth() {
+function Fourth({ scrollToFormPage }) {
   return (
     <Card className="border-none shadow-none bg-white text-black">
       <div className="flex flex-col md:flex-row mt-20 pt-20 items-center justify-centre">
-        <div className="flex flex-col  w-full md:w-1/2 md:m-20 md:p-10 md:justify-center md:items-center">
+        <div className="flex flex-col  w-full md:w-1/2 md:m-20  ">
           <div className="font-abhaya-libre text-3xl md:text-4xl  w-3/4">
             <p>Automate your Customer Engagement through</p>
           </div>
@@ -18,7 +18,12 @@ function Fourth() {
             <p>& Customer Support.</p>
           </div>
 
-          <Button className="bg-green-600 md:w-1/2 mt-10 " size="xl">
+          <Button
+            onClick={scrollToFormPage}
+            className="bg-[#12BF7C]
+             w-1/2 mt-10  "
+            size="xl"
+          >
             Request a Demo <MdOutlineArrowOutward className="m-1 ml-2" />
           </Button>
         </div>

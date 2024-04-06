@@ -2,7 +2,7 @@ import { Navbar, Button, NavbarBrand } from "flowbite-react";
 import logo from "../asset/servii_logo.svg";
 import "tailwindcss/tailwind.css";
 
-function Header1() {
+function Header1({ scrollToFormPage }) {
   return (
     <Navbar className="flex  gap-2 md:order-2 bg-white text-black border-b-2 ">
       <NavbarBrand className="bg-white text-black">
@@ -15,7 +15,11 @@ function Header1() {
         />
       </NavbarBrand>
       <div className="flex  bg-white text-black  gap-2 md:order-2  ">
-        <Button color="success" className="bg-[#12bf7c]">
+        <Button
+          color="success"
+          className="bg-[#12bf7c]"
+          onClick={scrollToFormPage}
+        >
           Book a demo
         </Button>
 

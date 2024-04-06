@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { useState } from "react";
-// import { Button } from "flowbite-react";
+import { useRef } from "react";
 import Header from "./component/Header1";
 import "./App.css";
 import Fourth from "./component/Fourth.jsx";
@@ -10,20 +9,26 @@ import Fifth from "./component/Fifth.jsx";
 import Kndustries from "./component/Kndustries.jsx";
 import FAQ from "./component/FAQ.jsx";
 import Terms from "./component/Terms.jsx";
+
 function App() {
-  // eslint-disable-next-line no-unused-vars
-  const [count, setCount] = useState(0);
+  const formpageRef = useRef(null);
+
+  const scrollToFormPage = () => {
+    formpageRef.current.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div className="bg-white text-black">
-      <Header />
-      <Second />
-      <Fourth />
-      <Fifth />
-      <Kndustries />
+      <Header scrollToFormPage={scrollToFormPage} />
+      <Second scrollToFormPage={scrollToFormPage} />
+      <Fourth scrollToFormPage={scrollToFormPage} />
+      <Fifth scrollToFormPage={scrollToFormPage} />
+      <Kndustries scrollToFormPage={scrollToFormPage} />
 
-      <Formpage />
-      {/* <FAQ /> */}
+      <div ref={formpageRef}>
+        <Formpage />
+      </div>
+
       <Terms />
     </div>
   );

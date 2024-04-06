@@ -7,7 +7,7 @@ import what from "../asset/whatsssss.png";
 //add icon for arrow rignt tilted upward react icons
 
 import { FaArrowRight } from "react-icons/fa";
-function Second() {
+function Second({ scrollToFormPage }) {
   return (
     <div className="bg-white text-black bg-no-repeat ">
       <div
@@ -30,8 +30,12 @@ function Second() {
           width: "489px", // Adjust width as needed
           height: "489px", // Adjust height as needed
           top: "247px",
-          right:"0",
+          right: "0",
           opacity: "0.06",
+          "@media (max-width: 767px)": {
+            width: "150x", // Adjust width as needed
+            height: "150px",
+          },
         }}
       ></div>
 
@@ -45,6 +49,10 @@ function Second() {
           left: "30%",
           // Adjust position as needed
           opacity: "0.06",
+          "@media (max-width: 767px)": {
+            width: "50x", // Adjust width as needed
+            height: "50px",
+          },
         }}
       ></div>
 
@@ -64,7 +72,12 @@ function Second() {
 
         {/* Center the button container */}
         <div className="pt-12">
-          <Button color="success" className="bg-[#12bf7c]" size="xl">
+          <Button
+            color="success"
+            className="bg-[#12bf7c]"
+            size="xl"
+            onClick={scrollToFormPage}
+          >
             Book a Demo
             <FaArrowRight className="transform rotate-270 m-1 ml-2" />
           </Button>
@@ -72,11 +85,11 @@ function Second() {
       </div>
 
       {/* first part of the web */}
-      <div className="flex justify-center mt-10 md:mt-20">
+      <div className="flex justify-center mt-10 md:mt-20 ">
         <img
           src="https://framerusercontent.com/images/D6CTA1pnxhaC0a4Nhx7rUtxz4.png" // Replace with the path to your image file
           alt="Your Image"
-          className="md:w-4/5 "
+          className="md:w-1059px md:h-310px  "
         />
       </div>
 
@@ -85,7 +98,7 @@ function Second() {
         <img
           src={serviqrr}
           alt="Your Image"
-          className="w-4/5 pt-20 mt-20 md-20 hidden md:block"
+          className=" pt-20 mt-20 md-20 hidden md:block"
         />
       </div>
 
