@@ -10,17 +10,6 @@ import { FaArrowRight } from "react-icons/fa";
 function Second() {
   return (
     <div className="bg-white text-black bg-no-repeat ">
-      {/* <div
-        style={{
-          backgroundImage: `url(${what})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          height:"555px",
-          width:"555px"
-        }}
-      ></div> */}
-
       <div
         className="absolute bg-cover"
         style={{
@@ -33,14 +22,27 @@ function Second() {
           opacity: "0.06",
         }}
       ></div>
+
+      <div
+        className="absolute bg-cover "
+        style={{
+          backgroundImage: `url('${what}')`,
+          width: "489px", // Adjust width as needed
+          height: "489px", // Adjust height as needed
+          top: "247px",
+          right:"0",
+          opacity: "0.06",
+        }}
+      ></div>
+
       <div
         className="absolute bg-cover"
         style={{
           backgroundImage: `url('${what}')`,
           width: "489px", // Adjust width as needed
           height: "489px", // Adjust height as needed
-          top: "247px", // Adjust position as needed
-          left: "1150px",
+          top: "180px", // Adjust position as needed
+          left: "30%",
           // Adjust position as needed
           opacity: "0.06",
         }}
