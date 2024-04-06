@@ -89,7 +89,7 @@ function Second({ scrollToFormPage }) {
         <img
           src="https://framerusercontent.com/images/D6CTA1pnxhaC0a4Nhx7rUtxz4.png" // Replace with the path to your image file
           alt="Your Image"
-          className="md:w-1059px md:h-310px  "
+          className="md:w-3/4  "
         />
       </div>
 
