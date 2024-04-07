@@ -9,7 +9,7 @@ import Termsandcondition from "./admin/Termsandcondition";
 import Refund from "./admin/Refund";
 import Privacy from "./admin/Privacy";
 
-// import Dashboard from "./Admin/";
+import Admin from "./admin/Admin";
 
 function App() {
   return (
@@ -21,6 +21,8 @@ function App() {
         <Route path="/tc" element={<Termsandcondition />} />
         <Route path="/refund" element={<Refund />} />
         <Route path="privacy" element={<Privacy />} />
+        <Route path="/admin" element={<Admin />} />
+
         {/* <Route path="/privacyPolicy" element={<PrivacyPolicy />} /> */}
       </Routes>
     </BrowserRouter>

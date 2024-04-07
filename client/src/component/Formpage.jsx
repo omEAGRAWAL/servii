@@ -25,7 +25,7 @@ function InputField({ label, placeholder, name, formData, setFormData }) {
         name={name}
         value={formData[name]}
         onChange={handleChange}
-        className="px-3 py-2 mt-2 text-s leading-6 bg-white rounded-lg border border-solid border-neutral-200 text-zinc-600 font-montserrat"
+        className="px-3 py-2 mt-2 text-l leading-9 w-full bg-white rounded-lg border border-solid border-neutral-200 text-zinc-600 font-montserrat"
       />
     </div>
   );
@@ -44,11 +44,11 @@ function PhoneInputField({ formData, setFormData }) {
     <div className="flex flex-col mt-6 max-w-full ">
       <label
         htmlFor="phoneNumber"
-        className="text-xl font-semibold leading-6 font-abhaya-libre text-neutral-800"
+        className="text-xl font-semibold leading-9 font-abhaya-libre text-neutral-800"
       >
         Contact Number*
       </label>
-      <div className="flex gap-2 mt-2 text-sm leading-6 text-zinc-600">
+      <div className="flex gap-2 mt-2 text-sm leading-9 text-zinc-600">
         <div className="px-3 py-2 text-center whitespace-nowrap bg-white rounded-lg border border-solid border-neutral-200">
           +91
         </div>
@@ -59,7 +59,7 @@ function PhoneInputField({ formData, setFormData }) {
           placeholder="Enter Contact Number"
           value={formData.phoneNumber}
           onChange={handleChange}
-          className="flex-1 px-3 py-2 font-montserrat bg-white rounded-lg border border-solid border-neutral-200"
+          className="flex-1 px-3 test-l py-2 font-montserrat bg-white rounded-lg border border-solid border-neutral-200"
         />
       </div>
     </div>
@@ -90,7 +90,7 @@ function TextAreaField({ formData, setFormData }) {
           placeholder="Write Messages..."
           value={formData.message}
           onChange={handleChange}
-          className="px-3 py-2 mt-2 font-montserrat text-sm leading-6 bg-white rounded-lg border border-solid border-neutral-200 text-zinc-600"
+          className="px-3 py-2 mt-2 font-montserrat text-sm leading-9 bg-white rounded-lg border border-solid border-neutral-200 text-zinc-600"
         ></textarea>
       </div>
     </div>
