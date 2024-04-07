@@ -4,7 +4,8 @@ import { Button } from "flowbite-react";
 import serviqrr from "../asset/serviqr.png";
 import serviqrmobile from "../asset/serviqrmobile.png";
 import first from "../asset/first.png";
-import what from "../asset/whatsssss.png";
+import what from "../asset/whatss.png";
+import what_right from "../asset/whatsssss.png";
 //add icon for arrow rignt tilted upward react icons
 
 import { FaArrowRight } from "react-icons/fa";
@@ -17,25 +18,28 @@ function Second({ scrollToFormPage }) {
           backgroundImage: `url('${what}')`,
           width: "658px", // Adjust width as needed
           height: "658px", // Adjust height as needed
-          top: "100px", // Adjust position as needed
+          top: "50px", // Adjust position as needed
           left: "-260px",
           opacity: "0.06",
         }}
       ></div>
 
-      {/* <div
-        className="bg-cover absolute "
+      <div
+        className="bg-no-repeat absolute  "
         style={{
-          backgroundImage: `url('${what}')`,
+          backgroundImage: `url('${what_right}')`,
 
-          width: "489px", // Adjust width as needed
-          height: "489px", // Adjust height as needed
-          // top: "247px",
-          // left: "75vw",
+          // Adjust height as needed
+          width: "400px", // Adjust width as needed
+          height: "400px", // Adjust height as needed
+          backgroundPosition: "right",
+          top: "100px",
+          right: "0px",
+          // Adjust position as needed
 
-          opacity: "0.6",
+          opacity: "0.06",
         }}
-      ></div> */}
+      ></div>
 
       <div
         className="flex flex-col items-center bg-no-repeat justify-center

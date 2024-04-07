@@ -1,36 +1,29 @@
 /* eslint-disable no-unused-vars */
-import { useRef } from "react";
-import Header from "./component/Header1";
 import "./App.css";
-import Fourth from "./component/Fourth.jsx";
-import Second from "./component/Second.jsx";
-import Formpage from "./component/Formpage.jsx";
-import Fifth from "./component/Fifth.jsx";
-import Kndustries from "./component/Kndustries.jsx";
-import FAQ from "./component/FAQ.jsx";
-import Terms from "./component/Terms.jsx";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./component/Header1";
+
+import Home from "./Homepage/Home";
+import Termsandcondition from "./admin/Termsandcondition";
+import Refund from "./admin/Refund";
+import Privacy from "./admin/Privacy";
+
+// import Dashboard from "./Admin/";
 
 function App() {
-  const formpageRef = useRef(null);
-
-  const scrollToFormPage = () => {
-    formpageRef.current.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
-    <div className="bg-white text-black">
-      <Header scrollToFormPage={scrollToFormPage} />
-      <Second scrollToFormPage={scrollToFormPage} />
-      <Fourth scrollToFormPage={scrollToFormPage} />
-      <Fifth scrollToFormPage={scrollToFormPage} />
-      <Kndustries scrollToFormPage={scrollToFormPage} />
-
-      <div ref={formpageRef}>
-        <Formpage />
-      </div>
-
-      <Terms />
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/tc" element={<Termsandcondition />} />
+        <Route path="/refund" element={<Refund />} />
+        <Route path="privacy" element={<Privacy />} />
+        {/* <Route path="/privacyPolicy" element={<PrivacyPolicy />} /> */}
+      </Routes>
+    </BrowserRouter>
   );
 }
 

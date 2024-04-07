@@ -16,7 +16,7 @@ function Industries() {
 
   return (
     <div className="flex flex-col md:flex-row p-5 md:m-20 mt-20 items-center justify-center bg-[#FAFFFA]">
-      <div className="md:w-1/2 flex flex-col justify-center items-center m-10 mr-20 ">
+      <div className="md:w-1/2 flex flex-col justify-center items-center m-10 mr-20 pr-10">
         <div className="md:m-5">
           <label className="text-[#12BF7C] border font-montserrat bg-white border-gray-300 rounded   p-1 ">
             Industries

@@ -40,7 +40,7 @@ function Fifth({ scrollToFormPage }) {
         Request a Demo <MdOutlineArrowOutward className="m-1 ml-2" />
       </Button>
 
-      <div className=" mt-10">
+      <div className=" mt-20 pt-12">
         <div className="">
           <img
             src={integration}

@@ -36,8 +36,18 @@ const schema = new mongoose.Schema({
 });
 
 const terms = new mongoose.Schema({
-  title: String,
-  content: String,
+  tc_title: String,
+
+  tc_content: String,
+
+  pp_title: String,
+  pp_content: String,
+
+  faq_title: String,
+  faq_content: String,
+
+  refund_title: String,
+  refund_content: String,
 });
 
 const Contact = mongoose.model("Contact", schema);
@@ -86,8 +96,26 @@ app.post("/api/contact", async (req, res) => {
 app.post("/api/terms", async (req, res) => {
   try {
     const terms = new Terms({
-      title: req.body.title,
-      content: req.body.content,
+      //     // {tc_title: String,
+
+      // tc_termscontent: String,
+
+      // pp_title: String,
+      // pp_content: String,
+
+      // faq_title: String,
+      // faq_content: String,
+
+      // payment_title: String,
+      // payment_content: String,} design this way
+      tc_title: req.body.tc_title,
+      tc_content: req.body.tc_content,
+      pp_title: req.body.pp_title,
+      pp_content: req.body.pp_content,
+      faq_title: req.body.faq_title,
+      faq_content: req.body.faq_content,
+      refund_title: req.body.refund_title,
+      refund_content: req.body.refund_content,
     });
     terms.save().then((result) => {
       res.status(201).json({
