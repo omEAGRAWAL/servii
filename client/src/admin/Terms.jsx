@@ -8,8 +8,6 @@ export default function Terms() {
   const [title, setTitle] = useState("");
   const [submit, setSubmit] = useState();
   const [content, setContent] = useState("");
-  
-   
 
   return (
     <div className="m-20 p-20">

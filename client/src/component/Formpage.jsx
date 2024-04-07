@@ -15,7 +15,7 @@ function InputField({ label, placeholder, name, formData, setFormData }) {
   };
 
   return (
-    <div className="flex flex-col font-abhaya-libre">
+    <div className="flex flex-col w-full font-abhaya-libre">
       <label className="text-xl font-semibold leading-6 text-neutral-700">
         {label}
       </label>
@@ -25,7 +25,7 @@ function InputField({ label, placeholder, name, formData, setFormData }) {
         name={name}
         value={formData[name]}
         onChange={handleChange}
-        className="px-3 py-2 mt-2 text-l leading-9 w-full bg-white rounded-lg border border-solid border-neutral-200 text-zinc-600 font-montserrat"
+        className="px-3 py-2 mt-2 text-l  leading-9  bg-white rounded-lg border border-solid border-neutral-200 text-zinc-600 font-montserrat"
       />
     </div>
   );
@@ -144,7 +144,7 @@ function MyComponent() {
       </div>
       <div className="flex flex-col md:w-3/5 ml-10  md:p-16  justify-center rounded-3xl bg-zinc-50 max-w-full">
         <form className="flex flex-col max-w-full pr-5" onSubmit={handleSubmit}>
-          <div className="flex  gap-5 flex-col md:flex-row flex-nowrap md:flex-wrap  ">
+          <div className="flex  gap-5 flex-col md:flex-row   ">
             <InputField
               label="Your Name*"
               placeholder="Enter Your Name"

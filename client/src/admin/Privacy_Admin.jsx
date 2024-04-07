@@ -1,14 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function Privacy_Admin() {
-    return (<div>
-
-
-
-        
-    </div>
-        
-    )
+  return <div></div>;
 }
 
-export default Privacy_Admin
+export default Privacy_Admin;
