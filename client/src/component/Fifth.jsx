@@ -45,7 +45,7 @@ function Fifth({ scrollToFormPage }) {
           <img
             src={integration}
             alt="integration with platforms"
-            className="hidden md:flex pt-10"
+            className="hidden md:flex pt-10 pd-10"
           />
         </div>
 
