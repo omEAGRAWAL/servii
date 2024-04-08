@@ -8,8 +8,8 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 
 function Solutions({ scrollToFormPage }) {
   return (
-    <div className="p-20 m-0" id="solutions">
-      <div className="flex flex-col md:flex-row mt-20 pt-20 items-center justify-centre">
+    <div className="p-20" id="solutions">
+      <div className="flex flex-col md:flex-row ml-20  mt-20 pt-20 items-center justify-centre">
         <div className="md:m-5 ">
           {/* <label className="text-[#349f50] border font-montserrat w-20 bg-white border-gray-300 rounded   text-sm ">
             Solutions
@@ -37,7 +37,7 @@ function Solutions({ scrollToFormPage }) {
         </div>
         <div className="md:w-1/2 w-full  mt-10">
           <div className="flex flex-col md:flex-row justify-center items-center ">
-            <div className="flex flex-col   w-1/2 p-10 ">
+            <div className="flex flex-col   w-1/2 p-10 pl-0 ">
               <img src={frame} alt="Your Image" className="w-20" />
               <p className="font-abhaya-libre text-xl/9">Marketing</p>
 
@@ -55,14 +55,14 @@ function Solutions({ scrollToFormPage }) {
               <div className="font-montserrat text-gray-700 text-shadow-md ">
                 <p>Utilizing AI bots to </p>
                 <p>automate conversations</p>
-                <p>streamlines lead capture fo</p>
-                <p>sales, tripling your sales </p>
-                <p>team efficiency.</p>
+                <p>streamlines lead capture </p>
+                <p> for sales, tripling your</p>
+                <p> sales team efficiency.</p>
               </div>
             </div>
           </div>
           <div className="flex flex-col md:flex-row justify-center items-centre ">
-            <div className="flex flex-col   w-1/2 p-10 ">
+            <div className="flex flex-col   w-1/2 p-10 pl-0 ">
               <img src={customersupport} alt="Your Image" className="w-20" />
               <p className="font-abhaya-libre text-xl/9">Marketing</p>
 
