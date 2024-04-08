@@ -1,5 +1,5 @@
 import { useRef } from "react";
-// import Header from "../component/Header1";
+import Header from "../component/Header1";
 import Fourth from "../component/Fourth.jsx";
 import Second from "../component/Second.jsx";
 import Formpage from "../component/Formpage.jsx";
@@ -16,7 +16,7 @@ function Home() {
 
   return (
     <div className="bg-white text-black">
-      {/* <Header scrollToFormPage={scrollToFormPage} /> */}
+      <Header scrollToFormPage={scrollToFormPage} />
       <Second scrollToFormPage={scrollToFormPage} />
       <Fourth scrollToFormPage={scrollToFormPage} />
       <Fifth scrollToFormPage={scrollToFormPage} />
