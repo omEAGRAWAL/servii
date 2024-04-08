@@ -1,11 +1,12 @@
+/* eslint-disable react/prop-types */
 import { Navbar, Button, NavbarBrand } from "flowbite-react";
 import logo from "../asset/servii_logo.svg";
 import "tailwindcss/tailwind.css";
 
 function Header1({ scrollToFormPage }) {
   return (
-    <Navbar className="flex  gap-2 md:order-2 bg-white text-black border-b-2 ">
-      <NavbarBrand className="bg-white text-black">
+    <Navbar className="flex  gap-2 md:order-2   g-white shadow-sm fixed top-0 w-full z-50">
+      <NavbarBrand className="">
         <img
           src={logo}
           alt="Logo"
