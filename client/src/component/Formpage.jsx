@@ -135,8 +135,8 @@ function MyComponent() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row m-20 p-5">
-      <div className=" items-center h-full hidden md:flex justify-center">
+    <div className="flex flex-col md:flex-row p-20 ">
+      <div className=" items-center hidden md:flex justify-center">
         <img src={contact} alt="mmmmmmmmmmmmmm" />
       </div>
       <div>
@@ -175,7 +175,7 @@ function MyComponent() {
           <button
             type="submit"
             onClick={handleSubmitbutton}
-            className="justify-center items-center p-4  mt-14 text-lg font-semibold text-white bg-emerald-500 rounded-lg max-w-full focus:outline-none"
+            className="justify-center items-center p-4  mt-10 text-lg font-semibold text-white bg-emerald-500 rounded-lg max-w-full focus:outline-none"
           >
             Lets Talk!
           </button>

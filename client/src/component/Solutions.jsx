@@ -6,7 +6,7 @@ import ecommerce from "../asset/ecommerce.svg";
 import customersupport from "../asset/customersupport.svg";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
-function Fourth({ scrollToFormPage }) {
+function Solutions({ scrollToFormPage }) {
   return (
     <div className="p-20 m-0" id="solutions">
       <div className="flex flex-col md:flex-row mt-20 pt-20 items-center justify-centre">
@@ -92,4 +92,4 @@ function Fourth({ scrollToFormPage }) {
   );
 }
 
-export default Fourth;
+export default Solutions;

@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { useRef } from "react";
 import Header from "../component/Header1";
-import Fourth from "../component/Fourth.jsx";
+import Solution from "../component/Solutions.jsx";
 import Second from "../component/Second.jsx";
 import Formpage from "../component/Formpage.jsx";
 import Fifth from "../component/Fifth.jsx";
@@ -20,30 +20,11 @@ function Home() {
     formpageRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
-  const scroolltoSolution = () => {
-    solutionpage.current.scrollIntoView({ behavior: "smooth" });
-  };
-  const scroolltoFeature = () => {
-    featurepage.current.scrollIntoView({ behavior: "smooth" });
-  };
-  const scroolltoIndustries = () => {
-    industriespage.current.scrollIntoView({ behavior: "smooth" });
-  };
-  const scroolltoFAQ = () => {
-    faqpage.current.scrollIntoView({ behavior: "smooth" });
-  };
-  const scroolltoContact = () => {
-    contactpage.current.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <div className="bg-white text-black">
-      <Header
-        scrollToFormPage={scrollToFormPage}
-        scroolltoIndustries={scroolltoIndustries}
-      />
+      <Header scrollToFormPage={scrollToFormPage} />
       <Second scrollToFormPage={scrollToFormPage} />
-      <Fourth scrollToFormPage={scrollToFormPage} />
+      <Solution scrollToFormPage={scrollToFormPage} />
       <Fifth scrollToFormPage={scrollToFormPage} />
 
       <div ref={industriespage}>

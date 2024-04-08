@@ -15,7 +15,7 @@ function Header1({ scrollToFormPage }) {
           "
         />
       </NavbarBrand>
-      <div className="flex  bg-white text-black  gap-2 md:order-2  ">
+      <div className="flex    gap-2 md:order-2  ">
         <Button
           color="success"
           className="bg-[#12bf7c]"

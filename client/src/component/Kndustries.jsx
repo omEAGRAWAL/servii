@@ -16,7 +16,7 @@ function Industries() {
 
   return (
     <div
-      className="flex flex-col md:flex-row p-5 pt-20 md:m-20  items-center justify-center bg-[#FAFFFA] rounded-xl"
+      className="flex flex-col md:flex-row p-5 pt-20 md:m-20  items-center justify-center bg-[#FAFFFA] rounded-3xl"
       id="industries"
     >
       <div className="md:w-1/2 flex flex-col justify-center items-center m-10 mr-20 pr-10">
@@ -33,9 +33,13 @@ function Industries() {
         {/* button sextion */}
 
         <div className="flex flex-wrap justify-center font-abhaya-libre  text-gray-600   font-medium m-5 ">
-          <div className=" w-1/3 md:w-1/2  p-2    h-20">
+          <div className=" w-1/3 md:w-1/2  p-2 pl-0    h-20">
             <button
-              className=" w-full h-full bg-white  text-2xl rounded-xl  hover:text-white   from-black  via-emerald-500 to-black hover:bg-gradient-to-l"
+              className={` w-full h-full bg-white hover:text-white  text-2xl
+              rounded-xl from-black  via-emerald-500 to-black hover:bg-gradient-to-l ${
+                activeDiv === "automotive" &&
+                "from-black  via-emerald-500 to-black bg-gradient-to-l text-white"
+              } `}
               onClick={() => handleButtonClick("automotive")}
             >
               Automotive
@@ -43,16 +47,24 @@ function Industries() {
           </div>
           <div className=" w-1/3 h-20  md:w-1/2  p-2">
             <button
-              className=" w-full h-full bg-white hover:text-white  text-2xl rounded-xl from-black  via-emerald-500 to-black hover:bg-gradient-to-l  "
+              className={` w-full h-full bg-white hover:text-white  text-2xl
+               rounded-xl from-black  via-emerald-500 to-black hover:bg-gradient-to-l ${
+                 activeDiv === "ecommerce" &&
+                 "from-black  via-emerald-500 to-black bg-gradient-to-l text-white"
+               } `}
               onClick={() => handleButtonClick("ecommerce")}
             >
               Ecommerce
             </button>
           </div>
-          <div className="w-1/3 h-20 md:w-1/2 p-2">
+          <div className="w-1/3 h-20 md:w-1/2 p-2 pl-0">
             {" "}
             <button
-              className=" w-full h-full bg-white text-black-500 text-2xl rounded-xl from-black  via-emerald-500 to-black hover:bg-gradient-to-l hover:text-white "
+              className={` w-full h-full bg-white hover:text-white  text-2xl
+              rounded-xl from-black  via-emerald-500 to-black hover:bg-gradient-to-l ${
+                activeDiv === "education" &&
+                "from-black  via-emerald-500 to-black bg-gradient-to-l text-white"
+              } `}
               onClick={() => handleButtonClick("education")}
             >
               Education
@@ -61,25 +73,37 @@ function Industries() {
           <div className="w-1/3 md:w-1/2 p-2">
             {" "}
             <button
-              className=" w-full h-full bg-white text-black-500 text-2xl rounded-xl from-black  via-emerald-500 to-black hover:bg-gradient-to-l hover:text-white "
+              className={` w-full h-full bg-white hover:text-white  text-2xl
+              rounded-xl from-black  via-emerald-500 to-black hover:bg-gradient-to-l ${
+                activeDiv === "fintech" &&
+                "from-black  via-emerald-500 to-black bg-gradient-to-l text-white"
+              } `}
               onClick={() => handleButtonClick("fintech")}
             >
               Fintech
             </button>
           </div>
-          <div className="w-1/3  h-20 md:w-1/2 p-2">
+          <div className="w-1/3  h-20 md:w-1/2 p-2 pl-0">
             {" "}
             <button
-              className=" w-full h-full bg-white text-black-500 text-2xl rounded-xl from-black  via-emerald-500 to-black hover:bg-gradient-to-l hover:text-white "
+              className={` w-full h-full bg-white hover:text-white  text-2xl
+              rounded-xl from-black  via-emerald-500 to-black hover:bg-gradient-to-l ${
+                activeDiv === "restaurants" &&
+                "from-black  via-emerald-500 to-black bg-gradient-to-l text-white"
+              } `}
               onClick={() => handleButtonClick("restaurants")}
             >
               Restaurants
             </button>
           </div>
-          <div className="w-1/3 md:w-1/2 p-2">
+          <div className="w-1/3 md:w-1/2 p-2 ">
             {" "}
             <button
-              className=" w-full h-full bg-white text-black-500 text-2xl rounded-xl from-black  via-emerald-500 to-black hover:bg-gradient-to-l hover:text-white "
+              className={` w-full h-full bg-white hover:text-white  text-2xl
+              rounded-xl from-black  via-emerald-500 to-black hover:bg-gradient-to-l ${
+                activeDiv === "retail" &&
+                "from-black  via-emerald-500 to-black bg-gradient-to-l text-white"
+              } `}
               onClick={() => handleButtonClick("retail")}
             >
               Retail
