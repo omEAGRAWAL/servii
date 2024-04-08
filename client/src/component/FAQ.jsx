@@ -3,7 +3,7 @@ import { LuDot } from "react-icons/lu";
 
 function FAQ() {
   return (
-    <div>
+    <div id="faq">
       <div
         style={{
           fontFamily: "Abhaya Libre ExtraBold",

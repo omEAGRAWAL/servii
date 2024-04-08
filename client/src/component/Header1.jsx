@@ -19,6 +19,7 @@ function Header1({ scrollToFormPage }) {
         <Button
           color="success"
           className="bg-[#12bf7c]"
+          // href="#formpage"
           onClick={scrollToFormPage}
         >
           Book a demo
@@ -28,10 +29,10 @@ function Header1({ scrollToFormPage }) {
       </div>
       <Navbar.Collapse className=" bg-white text-black">
         <Navbar.Link href="#">Home</Navbar.Link>
-        <Navbar.Link href="#">Solutions</Navbar.Link>
-        <Navbar.Link href="#">Features</Navbar.Link>
-        <Navbar.Link href="#">Industries</Navbar.Link>
-        <Navbar.Link href="#">FAQs</Navbar.Link>
+        <Navbar.Link href="#solutions">Solutions</Navbar.Link>
+        <Navbar.Link href="#features">Features</Navbar.Link>
+        <Navbar.Link href="#industries">Industries</Navbar.Link>
+        <Navbar.Link href="#faq">FAQs</Navbar.Link>
         <Navbar.Link href="#">Contact us</Navbar.Link>
       </Navbar.Collapse>
     </Navbar>

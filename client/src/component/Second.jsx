@@ -11,7 +11,7 @@ import what_right from "../asset/whatsssss.png";
 import { FaArrowRight } from "react-icons/fa";
 function Second({ scrollToFormPage }) {
   return (
-    <div className="bg-white text-black bg-no-repeat ">
+    <div className="bg-white text-black bg-no-repeat pt-20 mt-20 ">
       <div
         className="absolute bg-cover"
         style={{

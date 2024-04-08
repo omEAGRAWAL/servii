@@ -8,16 +8,19 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 
 function Fourth({ scrollToFormPage }) {
   return (
-    <div className="p-20 m-0">
+    <div className="p-20 m-0" id="solutions">
       <div className="flex flex-col md:flex-row mt-20 pt-20 items-center justify-centre">
-        <div className="flex flex-col   md:w-1/2 md:m-20  ">
-          <label className="text-[#349f50] border font-montserrat w-20 bg-white border-gray-300 rounded   text-sm ">
+        <div className="md:m-5 ">
+          {/* <label className="text-[#349f50] border font-montserrat w-20 bg-white border-gray-300 rounded   text-sm ">
+            Solutions
+          </label> */}
+          <label className="text-[#12BF7C] border font-montserrat bg-white border-gray-300 rounded   p-1 ">
             Solutions
           </label>
-          <div className="font-abhaya-libre text-3xl md:text-4xl mt-10 w-3/4">
+          <div className="font-abhaya-libre text-3xl md:text-4xl mt-16 w-3/4">
             <p>Automate your Customer Engagement through</p>
           </div>
-          <div className="font-montserrat text-l md:text-xl mt-5 w-3/4 ">
+          <div className="font-montserrat text-[#6B786C] text-l md:text-l mt-5 w-3/4 ">
             <p>Automate Marketing, Sales </p>
             <p>& Customer Support.</p>
           </div>
@@ -34,7 +37,7 @@ function Fourth({ scrollToFormPage }) {
         </div>
         <div className="md:w-1/2 w-full  mt-10">
           <div className="flex flex-col md:flex-row justify-center items-center ">
-            <div className="flex flex-col   w-1/2 ">
+            <div className="flex flex-col   w-1/2 p-10 ">
               <img src={frame} alt="Your Image" className="w-20" />
               <p className="font-abhaya-libre text-xl/9">Marketing</p>
 
@@ -45,7 +48,7 @@ function Fourth({ scrollToFormPage }) {
                 <p>full- funnel conversions</p>
               </div>
             </div>
-            <div className="flex flex-col w-1/2 ">
+            <div className="flex flex-col w-1/2 p-10">
               <img src={sales} alt="Your Image" className="w-20" />
               <p className="font-abhaya-libre text-xl/9">Marketing</p>
 
@@ -59,7 +62,7 @@ function Fourth({ scrollToFormPage }) {
             </div>
           </div>
           <div className="flex flex-col md:flex-row justify-center items-centre ">
-            <div className="flex flex-col   w-1/2 ">
+            <div className="flex flex-col   w-1/2 p-10 ">
               <img src={customersupport} alt="Your Image" className="w-20" />
               <p className="font-abhaya-libre text-xl/9">Marketing</p>
 
@@ -70,7 +73,7 @@ function Fourth({ scrollToFormPage }) {
                 <p>support.</p>
               </div>
             </div>
-            <div className="flex flex-col w-1/2">
+            <div className="flex flex-col w-1/2 p-10">
               <img src={ecommerce} alt="Your Image" className="w-20" />
               <p className="font-abhaya-libre text-xl/9">Marketing</p>
 

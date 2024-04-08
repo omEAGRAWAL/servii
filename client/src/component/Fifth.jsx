@@ -25,7 +25,7 @@ function Fifth({ scrollToFormPage }) {
         </div>
       </div>
 
-      <div className=" flex justify-center items-center pr-15 pt-20 mt-20">
+      <div className=" flex justify-center items-center pr-15 pt-20 mt-20" id="features">
         <img src={frame} alt=" form" className=" hidden md:block " />
       </div>
       <div className="  md:hidden mt-10 pt-5 ">
