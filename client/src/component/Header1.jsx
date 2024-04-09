@@ -5,37 +5,42 @@ import "tailwindcss/tailwind.css";
 
 function Header1({ scrollToFormPage }) {
   return (
-    <Navbar className="flex  gap-2 md:order-2   g-white shadow-sm fixed top-0 w-full z-50">
-      <NavbarBrand className="">
-        <img
-          src={logo}
-          alt="Logo"
-          className="bg-white 
-          
-          "
-        />
-      </NavbarBrand>
-      <div className="flex    gap-2 md:order-2  ">
-        <Button
-          color="success"
-          className="bg-[#12bf7c]"
-          // href="#formpage"
-          onClick={scrollToFormPage}
-        >
-          Book a demo
-        </Button>
+    <div className="flex justify-center items-centre ">
+      <Navbar className="flex gap-2 md:order-2 m-4 p-2    g-white shadow-xl rounded-3xl fixed top-0 z-50 w-4/5">
 
-        <Navbar.Toggle className="bg-white text-black" />
-      </div>
-      <Navbar.Collapse className=" bg-white text-black">
-        <Navbar.Link href="#">Home</Navbar.Link>
-        <Navbar.Link href="#solutions">Solutions</Navbar.Link>
-        <Navbar.Link href="#features">Features</Navbar.Link>
-        <Navbar.Link href="#industries">Industries</Navbar.Link>
-        <Navbar.Link href="#faq">FAQs</Navbar.Link>
-        <Navbar.Link href="#">Contact us</Navbar.Link>
-      </Navbar.Collapse>
-    </Navbar>
+<NavbarBrand className="m-1">
+  <img
+    src={logo}
+    alt="Logo"
+    className="bg-white 
+    
+    "
+  />
+</NavbarBrand>
+<div className="flex    gap-2 md:order-2  m-1">
+  <Button
+    color="success"
+    className="bg-[#12bf7c]"
+    // href="#formpage"
+    onClick={scrollToFormPage}
+  >
+    Book a demo
+  </Button>
+
+  <Navbar.Toggle className="bg-white text-black" />
+</div>
+<Navbar.Collapse className=" bg-white text-black">
+  <Navbar.Link href="#">Home</Navbar.Link>
+  <Navbar.Link href="#solutions">Solutions</Navbar.Link>
+  <Navbar.Link href="#features">Features</Navbar.Link>
+  <Navbar.Link href="#industries">Industries</Navbar.Link>
+  <Navbar.Link href="#faq">FAQs</Navbar.Link>
+  <Navbar.Link href="#">Contact us</Navbar.Link>
+</Navbar.Collapse>
+</Navbar>
+    </div>
+    
+    
   );
 }
 
