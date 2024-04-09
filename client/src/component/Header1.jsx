@@ -6,7 +6,7 @@ import "tailwindcss/tailwind.css";
 function Header1({ scrollToFormPage }) {
   return (
     <div className="flex justify-center items-centre ">
-      <Navbar className="flex gap-2 md:order-2 m-4 p-2    g-white shadow-xl rounded-md fixed top-0 z-50 w-4/5">
+      <Navbar className="flex gap-2 md:order-2 m-4 p-2    g-white shadow-xl rounded-2xl fixed top-0 z-50 w-4/5">
         <NavbarBrand className="m-1">
           <img
             src={logo}
