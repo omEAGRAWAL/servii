@@ -7,6 +7,7 @@ import Formpage from "../component/Formpage.jsx";
 import Fifth from "../component/Fifth.jsx";
 import Kndustries from "../component/Kndustries.jsx";
 import FAQ from "../component/FAQ.jsx";
+import Footer from "../component/Footer.jsx";
 
 function Home() {
   const formpageRef = useRef(null);
@@ -37,6 +38,7 @@ function Home() {
       </div>
 
       <FAQ />
+      <Footer />
     </div>
   );
 }
