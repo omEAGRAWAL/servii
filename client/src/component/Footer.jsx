@@ -1,13 +1,19 @@
+/* eslint-disable no-unused-vars */
 import { Footer } from "flowbite-react";
 import bharat from "../asset/bharat_footer.svg";
 import logo from "../asset/servii_logo_footer.svg";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { AiOutlineFacebook } from "react-icons/ai";
 import { AiOutlineLinkedin } from "react-icons/ai";
+// eslint-disable-next-line no-unused-vars
+import { FaHeart } from "react-icons/fa";
 function Footerbars() {
   return (
     <div className="w-full rounded-none">
-      <Footer className="bg-black text-white w-full  rounded-none p-11" container>
+      <Footer
+        className="bg-black text-white w-full  rounded-none p-11"
+        container
+      >
         <div className="flex flex-col w-full ">
           <div className="  w-full   flex flex-row">
             <Footer.Brand href="#" src={logo} alt="Flowbite Logo" />
@@ -45,7 +51,15 @@ function Footerbars() {
               </Footer.Link>
             </Footer.LinkGroup>
 
-            <img src={bharat} alt="bharat" className="" />
+            {/* <img src={bharat} alt="bharat" className="w-40" /> */}
+            <div className="flex flex-row items-center ">
+            <div className="">
+              Made with <FaHeart size={25} color="red" className="inline mr-1" /> 
+              
+            </div>
+            <div className=" text-2xl text-[#FF0000]">भारत</div>
+            </div>
+            
           </div>
         </div>
       </Footer>
