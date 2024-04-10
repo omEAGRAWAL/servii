@@ -14,7 +14,7 @@ function Solutions({ scrollToFormPage }) {
           {/* <label className="text-[#349f50] border font-montserrat w-20 bg-white border-gray-300 rounded   text-sm ">
             Solutions
           </label> */}
-          <label className="text-[#12BF7C] border font-montserrat bg-white border-gray-300 rounded   p-1 ">
+          <label className="text-[#12BF7C] border font-montserrat text-sm bg-white border-gray-300 rounded    ">
             Solutions
           </label>
           <div className="font-abhaya-libre text-3xl md:text-4xl mt-16 w-3/4">
