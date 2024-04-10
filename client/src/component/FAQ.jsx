@@ -33,7 +33,7 @@ function FAQ() {
         </div>
 
         <div
-          className="pt-6 pl-7 text-[#595959]"
+          className="pt-6 pl-7 text-[#595959] bg-[#FAFFFA]"
           style={{
             fontFamily: "Montserrat",
             fontSize: "18px",
@@ -67,7 +67,7 @@ function FAQ() {
         </div>
 
         <div
-          className="pt-6 pl-7 text-[#595959]"
+          className="pt-6 pl-7 text-[#595959] bg-[#FAFFFA]"
           style={{
             fontFamily: "Montserrat",
             fontSize: "18px",
@@ -101,7 +101,7 @@ function FAQ() {
         </div>
 
         <div
-          className="pt-6 pl-7 text-[#595959]"
+          className="pt-6 pl-7 text-[#595959] bg-[#FAFFFA]"
           style={{
             fontFamily: "Montserrat",
             fontSize: "18px",
@@ -130,7 +130,7 @@ function FAQ() {
         </div>
 
         <div
-          className="pt-6 pl-7 text-[#595959]"
+          className="pt-6 pl-7 text-[#595959] bg-[#FAFFFA]"
           style={{
             fontFamily: "Montserrat",
             fontSize: "18px",
@@ -146,7 +146,7 @@ function FAQ() {
           of messages between you and the user.
         </div>
       </div>
-      <div className="pl-20 ml-10 pt-10 mt-0">
+      <div className="pl-20 ml-10 pt-10 mt-0 bg-[#FAFFFA]">
         <div
           className="text-[#111111]"
           style={{
@@ -163,7 +163,7 @@ function FAQ() {
         </div>
 
         <div
-          className="pt-6 pl-7 text-[#595959]"
+          className="pt-6 pl-7 text-[#595959] bg-[#FAFFFA]"
           style={{
             fontFamily: "Montserrat",
             fontSize: "18px",
@@ -176,7 +176,7 @@ function FAQ() {
           setup cost for its on-boarding procedure.
         </div>
       </div>
-      <div className="pl-20 ml-10 pt-10 mt-0">
+      <div className="pl-20 ml-10 pt-10 mt-0 bg-[#FAFFFA]">
         <div
           className="text-[#111111]"
           style={{
@@ -192,7 +192,7 @@ function FAQ() {
         </div>
 
         <div
-          className="pt-6 pl-7 text-[#595959]"
+          className="pt-6 pl-7 text-[#595959] bg-[#FAFFFA]"
           style={{
             fontFamily: "Montserrat",
             fontSize: "18px",

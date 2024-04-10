@@ -11,7 +11,7 @@ function Footerbars() {
   return (
     <div className="w-full rounded-none pt-20 mt-10">
       <Footer
-        className="bg-black text-white w-full  rounded-none p-11"
+        className="bg-black text-white w-full  rounded-none p-7"
         container
       >
         <div className="flex flex-col w-full ">
@@ -31,7 +31,7 @@ function Footerbars() {
             </div>
           </div>
 
-          <div className="flex flex-row items-center justify-between pt-10">
+          <div className="flex flex-row items-center justify-between pt-7">
             <Footer.Copyright
               href="#"
               by="Servii Automotives Pvt. Ltd"
@@ -53,13 +53,12 @@ function Footerbars() {
 
             {/* <img src={bharat} alt="bharat" className="w-40" /> */}
             <div className="flex flex-row items-center ">
-            <div className="">
-              Made with <FaHeart size={25} color="red" className="inline mr-1" /> 
-              
+              <div className="">
+                Made with{" "}
+                <FaHeart size={25} color="red" className="inline mr-1" />
+              </div>
+              <div className=" text-2xl text-[#FF0000]">भारत</div>
             </div>
-            <div className=" text-2xl text-[#FF0000]">भारत</div>
-            </div>
-            
           </div>
         </div>
       </Footer>
