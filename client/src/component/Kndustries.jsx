@@ -37,9 +37,9 @@ function Industries() {
             <div className=" w-1/3 md:w-1/2  p-2 pl-0    h-20">
               <button
                 className={` w-full h-full bg-white hover:text-white  text-2xl
-              rounded-xl from-black  via-emerald-500 to-black hover:bg-gradient-to-l ${
+              rounded-xl from-black  via-emerald-900 to-black hover:bg-gradient-to-l ${
                 activeDiv === "automotive" &&
-                "from-black  via-emerald-500 to-black bg-gradient-to-l text-white"
+                "from-black  via-emerald-900 to-black bg-gradient-to-l text-white"
               } `}
                 onClick={() => handleButtonClick("automotive")}
               >
@@ -49,9 +49,9 @@ function Industries() {
             <div className=" w-1/3 h-20  md:w-1/2  p-2">
               <button
                 className={` w-full h-full bg-white hover:text-white  text-2xl
-               rounded-xl from-black  via-emerald-500 to-black hover:bg-gradient-to-l ${
+               rounded-xl from-black  via-emerald-900 to-black hover:bg-gradient-to-l ${
                  activeDiv === "ecommerce" &&
-                 "from-black  via-emerald-500 to-black bg-gradient-to-l text-white"
+                 "from-black  via-emerald-900 to-black bg-gradient-to-l text-white"
                } `}
                 onClick={() => handleButtonClick("ecommerce")}
               >
@@ -62,9 +62,9 @@ function Industries() {
               {" "}
               <button
                 className={` w-full h-full bg-white hover:text-white  text-2xl
-              rounded-xl from-black  via-emerald-500 to-black hover:bg-gradient-to-l ${
+              rounded-xl from-black  via-emerald-900 to-black hover:bg-gradient-to-l ${
                 activeDiv === "education" &&
-                "from-black  via-emerald-500 to-black bg-gradient-to-l text-white"
+                "from-black  via-emerald-900 to-black bg-gradient-to-l text-white"
               } `}
                 onClick={() => handleButtonClick("education")}
               >
@@ -75,9 +75,9 @@ function Industries() {
               {" "}
               <button
                 className={` w-full h-full bg-white hover:text-white  text-2xl
-              rounded-xl from-black  via-emerald-500 to-black hover:bg-gradient-to-l ${
+              rounded-xl from-black  via-emerald-900 to-black hover:bg-gradient-to-l ${
                 activeDiv === "fintech" &&
-                "from-black  via-emerald-500 to-black bg-gradient-to-l text-white"
+                "from-black  via-emerald-900 to-black bg-gradient-to-l text-white"
               } `}
                 onClick={() => handleButtonClick("fintech")}
               >
@@ -88,9 +88,9 @@ function Industries() {
               {" "}
               <button
                 className={` w-full h-full bg-white hover:text-white  text-2xl
-              rounded-xl from-black  via-emerald-500 to-black hover:bg-gradient-to-l ${
+              rounded-xl from-black  via-emerald-900 to-black hover:bg-gradient-to-l ${
                 activeDiv === "restaurants" &&
-                "from-black  via-emerald-500 to-black bg-gradient-to-l text-white"
+                "from-black  via-emerald-900 to-black bg-gradient-to-l text-white"
               } `}
                 onClick={() => handleButtonClick("restaurants")}
               >
@@ -101,9 +101,9 @@ function Industries() {
               {" "}
               <button
                 className={` w-full h-full bg-white hover:text-white  text-2xl
-              rounded-xl from-black  via-emerald-500 to-black hover:bg-gradient-to-l ${
+              rounded-xl from-black  via-emerald-900 to-black hover:bg-gradient-to-l ${
                 activeDiv === "retail" &&
-                "from-black  via-emerald-500 to-black bg-gradient-to-l text-white"
+                "from-black  via-emerald-900 to-black bg-gradient-to-l text-white"
               } `}
                 onClick={() => handleButtonClick("retail")}
               >
