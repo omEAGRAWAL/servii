@@ -9,7 +9,7 @@ import { AiOutlineLinkedin } from "react-icons/ai";
 import { FaHeart } from "react-icons/fa";
 function Footerbars() {
   return (
-    <div className="w-full rounded-none">
+    <div className="w-full rounded-none pt-20 mt-10">
       <Footer
         className="bg-black text-white w-full  rounded-none p-11"
         container
