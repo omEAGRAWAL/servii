@@ -70,7 +70,7 @@ function Privacy_Admin() {
   return (
     <div>
       <div className="flex  justify-center m-10 ">
-        <div className="flex flex-col text-4xl">Terms and Conditions</div>
+        <div className="flex flex-col text-4xl">FAQ</div>
       </div>
       <div className="flex justify-center items-center  bg-[#aadfaa]">
         <form
@@ -107,7 +107,7 @@ function Privacy_Admin() {
       </div>
 
       {terms.map((term) =>
-        term.faq_title && term.faq_content ? (
+        term.faq_title || term.faq_content ? (
           <div key={term._id} className="ml-20 mr-10 flex flex-col">
             <div className="flex flex-row justify-between">
               <div

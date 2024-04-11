@@ -73,7 +73,7 @@ function Privacy_Admin() {
   return (
     <div>
       <div className="flex  justify-center m-10 ">
-        <div className="flex flex-col text-4xl">Terms and Conditions</div>
+        <div className="flex flex-col text-4xl">Refund Policies</div>
       </div>
       <div className="flex justify-center items-center  bg-[#aadfaa]">
         <form
