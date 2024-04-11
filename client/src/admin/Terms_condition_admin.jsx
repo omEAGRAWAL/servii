@@ -11,8 +11,8 @@ function Privacy_Admin() {
   const createMarkup = (text) => ({ __html: text });
   const [terms, setTerms] = useState([]);
   const [id, setId] = useState("");
-  const [pp_title, setTitle] = useState("");
-  const [pp_content, setContent] = useState("");
+  const [tc_title, setTitle] = useState("");
+  const [tc_content, setContent] = useState("");
 
   useEffect(() => {
     fetchTerms();
@@ -29,7 +29,7 @@ function Privacy_Admin() {
 
   const handleAdd = async (e) => {
     e.preventDefault();
-    const newData = { pp_title: pp_title, pp_content: pp_content };
+    const newData = { tc_title: tc_title, tc_content: tc_content };
     try {
       await addTerms(newData);
       await fetchTerms();
@@ -43,14 +43,14 @@ function Privacy_Admin() {
   const handleUpdate = async (e) => {
     e.preventDefault();
 
-    const updatedData = { pp_title, pp_content }; // Using object shorthand notation
+    const updatedData = { tc_title, tc_content }; // Using object shorthand notation
 
     try {
       await updateTerms(id, updatedData);
       await fetchTerms(); // Fetch updated terms after the update operation
       setId(""); // Clear the id state
-      setTitle(""); // Clear the pp_title state
-      setContent(""); // Clear the pp_content state
+      setTitle(""); // Clear the tc_title state
+      setContent(""); // Clear the tc_content state
     } catch (error) {
       console.error("Error updating term:", error);
       // Handle error appropriately in your component
@@ -107,7 +107,7 @@ function Privacy_Admin() {
       </div>
 
       {terms.map((term) =>
-        term.pp_title && term.pp_content ? (
+        term.tc_title && term.tc_content ? (
           <div key={term._id} className="ml-20 mr-10 flex flex-col">
             <div className="flex flex-row justify-between">
               <div
@@ -121,15 +121,15 @@ function Privacy_Admin() {
                 }}
               >
                 <LuDot className="inline" />
-                {term.pp_title}
+                {term.tc_title}
               </div>
               <div className=" inline-block  ">
                 <Button
                   className="inline-block m-5"
                   onClick={() => {
                     setId(term._id);
-                    setTitle(term.pp_title);
-                    setContent(term.pp_content);
+                    setTitle(term.tc_title);
+                    setContent(term.tc_content);
                   }}
                 >
                   Edit
@@ -152,7 +152,7 @@ function Privacy_Admin() {
                 textAlign: "left",
               }}
             >
-              <div dangerouslySetInnerHTML={createMarkup(term.pp_content)} />
+              <div dangerouslySetInnerHTML={createMarkup(term.tc_content)} />
             </div>
 
             {term._id === id && (
@@ -172,7 +172,7 @@ function Privacy_Admin() {
                       type="text"
                       id="title"
                       placeholder="Enter the title"
-                      value={pp_title}
+                      value={tc_title}
                       onChange={(e) => setTitle(e.target.value)}
                       className="text-xl border-2"
                     />
@@ -183,7 +183,7 @@ function Privacy_Admin() {
                     </label>
                     <ReactQuill
                       theme="snow"
-                      value={pp_content}
+                      value={tc_content}
                       onChange={setContent}
                       className="bg-gray-200"
                     />

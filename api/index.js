@@ -140,36 +140,62 @@ app.get("/api/terms", async (req, res) => {
 // we need to update the terms using the _id
 app.put("/api/terms/:id", async (req, res) => {
   try {
+    const {
+      tc_title,
+      tc_content,
+      pp_title,
+      pp_content,
+      faq_title,
+      faq_content,
+      refund_title,
+      refund_content,
+    } = req.body;
+
+    // Find the terms by ID
     const terms = await Terms.findById(req.params.id);
-    terms.title = req.body.title;
-    terms.content = req.body.content;
-    terms.save().then((result) => {
-      res.status(201).json({
-        message: "Terms updated successfully",
-      });
+
+    // Update the terms with the provided data
+    terms.tc_title = tc_title;
+    terms.tc_content = tc_content;
+    terms.pp_title = pp_title;
+    terms.pp_content = pp_content;
+    terms.faq_title = faq_title;
+    terms.faq_content = faq_content;
+    terms.refund_title = refund_title;
+    terms.refund_content = refund_content;
+
+    // Save the updated terms
+    await terms.save();
+
+    // Respond with success message
+    res.status(200).json({
+      message: "Terms updated successfully",
     });
   } catch (error) {
-    console.error("Error submitting form:", error);
-    // Handle errors (e.g., display an error message)
+    console.error("Error updating terms:", error);
+    res.status(500).json({
+      message: "Internal server error",
+    });
   }
 });
 
 // to delete a term
 app.delete("/api/terms/:id", async (req, res) => {
   try {
-    const terms = await Terms.findById(req.params.id);
-    terms.delete().then((result) => {
+    const terms = await Terms.deleteOne({ _id: req.params.id });
+    if (terms.deletedCount === 1) {
       res.status(201).json({
         message: "Terms deleted successfully",
       });
-    });
+    } else {
+      res.status(404).json({
+        message: "Terms not found",
+      });
+    }
   } catch (error) {
-    console.error("Error submitting form:", error);
-    // Handle errors (e.g., display an error message)
+    console.error("Error deleting terms:", error);
+    res.status(500).json({
+      message: "Internal server error",
+    });
   }
-});
-
-app.use(express.static(path.join(__dirname, "/client/dist")));
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client", "dist", "index.html"));
 });
