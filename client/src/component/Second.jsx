@@ -13,7 +13,7 @@ function Second({ scrollToFormPage }) {
   return (
     <div className="bg-white text-black bg-no-repeat pt-20 mt-20 ">
       <div
-        className="absolute bg-cover"
+        className="absolute bg-cover hidden md:block "
         style={{
           backgroundImage: `url('${what}')`,
           width: "658px", // Adjust width as needed

@@ -135,14 +135,14 @@ function MyComponent() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row p-20 ">
+    <div className="flex flex-col md:flex-row md:p-20 p-5 ">
       <div className=" items-center hidden md:flex justify-center">
         <img src={contact} alt="mmmmmmmmmmmmmm" />
       </div>
       <div>
         <img src={contactmobile} alt="contact mobile" className="md:hidden" />
       </div>
-      <div className="flex flex-col md:w-3/5 ml-10  md:p-16  justify-center rounded-3xl bg-zinc-50 max-w-full">
+      <div className="flex flex-col md:w-3/5 md:ml-10 p-5 mt-5  md:p-16  justify-center rounded-3xl bg-zinc-50 max-w-full">
         <form className="flex flex-col max-w-full pr-5" onSubmit={handleSubmit}>
           <div className="flex  gap-5 flex-col md:flex-row   ">
             <InputField

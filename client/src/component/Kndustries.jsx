@@ -15,28 +15,28 @@ function Industries() {
   };
 
   return (
-    <div className="pt-20 mt-10">
+    <div className="pt-20  mt-10">
       <div
-        className="flex flex-col md:flex-row p-5  md:m-20  items-center justify-center bg-[#FAFFFA] rounded-3xl"
+        className="flex flex-col md:flex-row p-5  md:m-20  m-5 items-center justify-center bg-[#FAFFFA] rounded-3xl"
         id="industries"
       >
-        <div className="md:w-1/2 flex flex-col justify-center items-center m-10 mr-20 pr-10">
+        <div className=" w-full md:w-1/2  p-5 md:p-0 flex flex-col justify-center items-center md:m-10 md:mr-20 md:pr-10">
           <div className="md:m-5">
             <label className="text-[#12BF7C] border font-montserrat bg-white border-gray-300 rounded   p-1 ">
               Industries
             </label>
 
-            <div className="font-abhaya-libre text-2xl md:text-3xl lg:text-4xl font-semibold mt-20 pr-10 ">
+            <div className="font-abhaya-libre text-xl md:text-3xl lg:text-4xl font-semibold mt-20 pr-10 ">
               <p>Custom WhatsApp Solutions for Industries</p>
             </div>
           </div>
 
           {/* button sextion */}
 
-          <div className="flex flex-wrap justify-center font-abhaya-libre  text-gray-600   font-medium m-5 ">
+          <div className="flex flex-wrap justify-center font-abhaya-libre  text-gray-600   font-medium mt-10 md:mt-0   text-sm md:text-2xl">
             <div className=" w-1/3 md:w-1/2  p-2 pl-0    h-20">
               <button
-                className={` w-full h-full bg-white hover:text-white  text-2xl
+                className={` w-full h-full bg-white hover:text-white 
               rounded-xl from-black  via-emerald-900 to-black hover:bg-gradient-to-l ${
                 activeDiv === "automotive" &&
                 "from-black  via-emerald-900 to-black bg-gradient-to-l text-white"
@@ -48,7 +48,7 @@ function Industries() {
             </div>
             <div className=" w-1/3 h-20  md:w-1/2  p-2">
               <button
-                className={` w-full h-full bg-white hover:text-white  text-2xl
+                className={` w-full h-full bg-white hover:text-white 
                rounded-xl from-black  via-emerald-900 to-black hover:bg-gradient-to-l ${
                  activeDiv === "ecommerce" &&
                  "from-black  via-emerald-900 to-black bg-gradient-to-l text-white"
@@ -61,7 +61,7 @@ function Industries() {
             <div className="w-1/3 h-20 md:w-1/2 p-2 pl-0">
               {" "}
               <button
-                className={` w-full h-full bg-white hover:text-white  text-2xl
+                className={` w-full h-full bg-white hover:text-white  
               rounded-xl from-black  via-emerald-900 to-black hover:bg-gradient-to-l ${
                 activeDiv === "education" &&
                 "from-black  via-emerald-900 to-black bg-gradient-to-l text-white"
@@ -71,10 +71,10 @@ function Industries() {
                 Education
               </button>
             </div>
-            <div className="w-1/3 md:w-1/2 p-2">
+            <div className="w-1/3 md:w-1/2 md:p-2  ">
               {" "}
               <button
-                className={` w-full h-full bg-white hover:text-white  text-2xl
+                className={` w-full h-full bg-white hover:text-white  p-1
               rounded-xl from-black  via-emerald-900 to-black hover:bg-gradient-to-l ${
                 activeDiv === "fintech" &&
                 "from-black  via-emerald-900 to-black bg-gradient-to-l text-white"
@@ -87,7 +87,7 @@ function Industries() {
             <div className="w-1/3  h-20 md:w-1/2 p-2 pl-0">
               {" "}
               <button
-                className={` w-full h-full bg-white hover:text-white  text-2xl
+                className={` w-full h-full bg-white hover:text-white  
               rounded-xl from-black  via-emerald-900 to-black hover:bg-gradient-to-l ${
                 activeDiv === "restaurants" &&
                 "from-black  via-emerald-900 to-black bg-gradient-to-l text-white"
@@ -100,7 +100,7 @@ function Industries() {
             <div className="w-1/3 md:w-1/2 p-2 ">
               {" "}
               <button
-                className={` w-full h-full bg-white hover:text-white  text-2xl
+                className={` w-full h-full bg-white hover:text-white 
               rounded-xl from-black  via-emerald-900 to-black hover:bg-gradient-to-l ${
                 activeDiv === "retail" &&
                 "from-black  via-emerald-900 to-black bg-gradient-to-l text-white"
@@ -114,10 +114,10 @@ function Industries() {
         </div>
 
         {/* image section */}
-        <div className="md:w-1/2 mt-5  mr-20">
+        <div className=" w-full md:w-1/2  p-5 text-xs md:text-sm   md:mr-20">
           {activeDiv === "automotive" && (
             <div>
-              <div className="">
+              <div className=" ">
                 <p className=" font-montserrat ">
                   Servii completely transforms the way enterprises engage with
                   their customers. Our groundbreaking business solutions,

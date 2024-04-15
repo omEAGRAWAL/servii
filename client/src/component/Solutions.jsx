@@ -8,19 +8,19 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 
 function Solutions({ scrollToFormPage }) {
   return (
-    <div className="p-20" id="solutions">
-      <div className="flex flex-col md:flex-row ml-20  mt-20 pt-20 items-center justify-centre">
-        <div className="md:m-5 ">
+    <div className=" m-5 md:p-20" id="solutions">
+      <div className="flex flex-col md:flex-row md:ml-20 p-5 md:p-0 mt-20 pt-20 items-center justify-centre">
+        <div className="m-5 ">
           {/* <label className="text-[#349f50] border font-montserrat w-20 bg-white border-gray-300 rounded   text-sm ">
             Solutions
           </label> */}
           <label className="text-[#12BF7C] border font-montserrat text-sm bg-white border-gray-300 rounded pl-1 pr-1   ">
             Solutions
           </label>
-          <div className="font-abhaya-libre text-3xl md:text-4xl mt-16 w-3/4">
+          <div className="font-abhaya-libre text-2xl md:text-3xl mt-16 w-full md:w-3/4">
             <p>Automate your Customer Engagement through</p>
           </div>
-          <div className="font-montserrat text-[#6B786C] text-l md:text-l mt-5 w-3/4 ">
+          <div className="font-montserrat text-[#6B786C] text-lg md:text-l mt-5 w-3/4 ">
             <p>Automate Marketing, Sales </p>
             <p>& Customer Support.</p>
           </div>
@@ -37,15 +37,15 @@ function Solutions({ scrollToFormPage }) {
         </div>
         <div className="md:w-1/2 w-full  mt-10">
           <div className="flex flex-col md:flex-row justify-center items-center ">
-            <div className="flex flex-col   w-1/2 p-10 pl-0 ">
-              <img src={frame} alt="Your Image" className="w-20" />
+            <div className="flex flex-col justify-center items-center   md:w-1/2 md:p-10 md:pl-0 ">
+              <img src={frame} alt="Your Image" className=" w-16 md:w-20 " />
               <p className="font-abhaya-libre text-xl/9">Marketing</p>
 
-              <div className="font-montserrat text-gray-700 text-shadow-md">
-                <p>Driving High Quality</p>
-                <p>Conversations using</p>
-                <p>WhatsApp Templates in</p>
-                <p>full- funnel conversions</p>
+              <div className="font-montserrat text-gray-700 text-shadow-md ">
+                <p>
+                  Driving High Quality Conversations using WhatsApp Templates in
+                  full- funnel conversions
+                </p>
               </div>
             </div>
             <div className="flex flex-col w-1/2 p-10">
