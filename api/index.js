@@ -6,10 +6,19 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const jwt = require("jsonwebtoken");
 const mongoose = require("mongoose");
+const nodemailer = require("nodemailer");
 
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
+
+let transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    user: "agrawalom755@gmail.com", // Your email address
+    pass: "lrhz rmbb icqc ojyf", // Your password (or an app-specific password)
+  },
+});
 
 //host on port 3000
 app.listen(3000, () => {
@@ -54,6 +63,24 @@ const Contact = mongoose.model("Contact", schema);
 const Terms = mongoose.model("Terms", terms);
 
 app.post("/api/contact", async (req, res) => {
+  try {
+    // Send mail with defined transport object
+    let info = await transporter.sendMail({
+      from: '"Om agrawal" <agrawalom755@gmail.com>', // sender address
+      to: mail, // list of receivers
+      subject: "servii", // Subject line
+      text: "Hey their we will reach out to you soon", // plain text body
+      html: "<b>Hello world?</b>", // html body
+    });
+
+    console.log("Message sent: %s", info.messageId);
+    // res.send("Email sent successfully");
+  } catch (error) {
+    console.error("Error sending email:", error);
+    // res.status(500).send("Error sending email");
+  }
+  const mail = req.body.email;
+
   const contact = new Contact({
     name: req.body.name,
     companyName: req.body.companyName,
@@ -68,46 +95,28 @@ app.post("/api/contact", async (req, res) => {
   });
   const data = req.body;
   console.log(data);
-  try {
-    const response = await fetch(
-      "https://script.google.com/macros/s/AKfycbwFJud8M9lD_8guYmQkdax8yDRYEk-Q54RjEwUnnxFZXH6w4y5Y5Uyj4IMshxJMjQE/exec",
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" }, // Specify content type
-        body: data, // Send data as JSON
-      }
-    );
 
-    // Check if the response status is 200 (OK)
-    if (response.status === 200) {
-      console.log(response);
-      console.log("Form data submitted successfully!");
-      // Optionally, clear the form or display a success message
-    } else {
-      // If the response status is not 200, throw an error
-      throw new Error("Failed to submit form");
-    }
+  try {
+    // Send mail with defined transport object
+    let info = await transporter.sendMail({
+      from: '"Om agrawal" <agrawalom755@gmail.com>', // sender address
+      to: mail, // list of receivers
+      subject: "Hello ✔", // Subject line
+      text: "Hello world?", // plain text body
+      html: "<b>Hello world?</b>", // html body
+    });
+
+    console.log("Message sent: %s", info.messageId);
+    // res.send("Email sent successfully");
   } catch (error) {
-    console.error("Error submitting form:", error);
-    // Handle errors (e.g., display an error message)
+    console.error("Error sending email:", error);
+    // res.status(500).send("Error sending email");
   }
 });
 
 app.post("/api/terms", async (req, res) => {
   try {
     const terms = new Terms({
-      //     // {tc_title: String,
-
-      // tc_termscontent: String,
-
-      // pp_title: String,
-      // pp_content: String,
-
-      // faq_title: String,
-      // faq_content: String,
-
-      // payment_title: String,
-      // payment_content: String,} design this way
       tc_title: req.body.tc_title,
       tc_content: req.body.tc_content,
       pp_title: req.body.pp_title,
@@ -198,4 +207,9 @@ app.delete("/api/terms/:id", async (req, res) => {
       message: "Internal server error",
     });
   }
+});
+app.use(express.static(path.join(__dirname, "/client/dist")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client", "dist", "index.html"));
 });

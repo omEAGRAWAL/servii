@@ -1,0 +1,316 @@
+[{
+  "_id": {
+    "$oid": "6612969e8d03807561d9865e"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661296b58d03807561d98663"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6617880928d2e556e1509135"
+  },
+  "tc_title": "",
+  "tc_content": "During your use of the Services, our servers automatically record certain information. This data includes, but is not limited to, time stamps, device and application IDs, Platform interaction data, IP address, Device ID, Application ID, Device Build, Device OS, and cookie information.\n\nService employs cookies and similar technologies on the Platform to recognize you and your device, provide customized services, and collect data about your device and usage. You have the option to turn off cookies through your browser settings.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6617880b28d2e556e1509138"
+  },
+  "tc_title": "",
+  "tc_content": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6617881328d2e556e150913b"
+  },
+  "tc_title": "",
+  "tc_content": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66178acf28d2e556e150916e"
+  },
+  "tc_title": "",
+  "tc_content": "<p>During your use <strong>of the Services, our servers automatically record certain information. This data includes, but is not limited to, time stamps, device and application IDs, Platform interaction data, IP address, Device ID, Application ID, Device Build, Device OS, and cookie infor</strong>mation.</p><p><br></p><p>Servii employs cookies and similar technologies on the Platform to recognize you and your device, provide customized services, and collect data about your device and usage. You have the option to disable cookies through your browser settings.<strong><span class=\"ql-cursor\">﻿</span></strong></p>",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66178b0a28d2e556e1509179"
+  },
+  "tc_title": "",
+  "tc_content": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66178b2628d2e556e1509181"
+  },
+  "tc_title": "",
+  "tc_content": "<ol><li>45yw45ywy</li></ol><ul><li>yw45yw5y45yw</li></ul>",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6617d99df15445e4a49b0469"
+  },
+  "refund_title": "Introduction",
+  "refund_content": "<p>The term \"Servii\" shall hereinafter be used to refer to the Servii Website and sub-pages with its addresses as servii.com, and the mobile application named Servii, including all its versions and variations.</p><p><br></p><p>By accessing, downloading, and using Servii and its services, you (referred to as \"User,\" \"you,\" \"your,\" or \"client\") agree to be bound by these Terms and Conditions, the Privacy Policy, and all other rules, regulations, and terms of use provided by Servii in relation to any Contest.</p><p><br></p><p>Servii, at its sole discretion, reserves the right to modify or make changes to the Terms and Conditions, rules, and regulations, and terms of use for its services.</p>",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6617d9e7f15445e4a49b07ab"
+  },
+  "refund_title": "Service",
+  "refund_content": "<p>To register or sign up on Servii, you must provide personal data, including Full Name, Email Address, Personal Whatsapp Number, Organization Name, Website, and Password. Registration can be completed through OTP verification via Mobile Number/Email address.</p><p><br></p><p>You agree that the information provided by you is true, complete, and accurate. You must not submit false information or provide details to which you have no right or authority. You are responsible for safeguarding your account and must not disclose your password to any third party. You will be solely responsible for any activities conducted under your password, whether authorized or not. In case of any unauthorized use, you must immediately notify Servii.</p><p><br></p><p>You acknowledge that the personal data provided to Servii will be used, processed, and stored for the proper organization of the Tournament, subject to Servii's Privacy Policy available at servii.com/privacy-policy.html.</p><p><br></p><p>You agree to use the Services in accordance with applicable laws, rules, and regulations, as well as any specific restrictions provided by Servii.</p><p><br></p><p>Servii may make changes to the application or website for maintenance purposes. In such cases, Servii will try to inform you of any scheduled maintenance, but it shall not be liable for any interruption of paid-for Services during maintenance.</p><p><br></p><p>By using Servii, you consent to receiving communications, including announcements, administrative messages, and advertisements, from Servii and its affiliates, subsidiaries, associates, licensors, and partners.</p>",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6617d9f8f15445e4a49b086f"
+  },
+  "refund_title": "License and Usage",
+  "refund_content": "<p>Upon payment of the Fees, Servii grants you a limited, non-exclusive, personal, revocable, non-transferable, and non-licensable license to access and use the Solution on a subscription basis, in accordance with these Terms of Use. This license does not transfer ownership or any Intellectual Property rights to you.</p><p><br></p><p>You agree to provide all necessary information for enabling services included in the platform subscription. The Solution provided under these Terms of Use is non-exclusive, and Servii may deal with it in any manner it deems fit, including providing services through third parties.</p>",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6617da0af15445e4a49b094b"
+  },
+  "refund_title": "Fees and Payment",
+  "refund_content": "<p>Servii's services are subject to monthly subscription fees, which are non-refundable. Users may also be liable to pay usage fees if their monthly usage exceeds the allowed limit in the subscription plan.</p><p><br></p><p>In case of late payment or material breaches, Servii may suspend or terminate the services. Users are responsible for their own taxes and fees.</p><p><br></p><p>Users must provide accurate purchase and account information for all transactions made via the Site. Recurring charges may be billed without prior approval until cancellation is notified.</p>",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6617da19f15445e4a49b09f3"
+  },
+  "refund_title": "Refund and Cancellation Policy",
+  "refund_content": "<p>Servii does not offer refunds for subscription fees. Users can cancel their subscription at any time, and the cancellation will take effect at the end of the current paid term.</p>",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6617da24f15445e4a49b0a6f"
+  },
+  "refund_title": "Intellectual Property",
+  "refund_content": "<p>Users acknowledge that all copyrights, trademarks, and other intellectual property rights related to the Services belong to Servii or its licensors. Users must not copy, distribute, or create derivative works from any content belonging to Servii.</p><p><br></p><p>If Users believe their content has been copied in a way that constitutes copyright infringement, they must provide appropriate information to Servii.</p>",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6617da2ff15445e4a49b0aef"
+  },
+  "refund_title": "Limitation of Liability",
+  "refund_content": "<p>Servii and its affiliates shall not be liable for any damages, loss, or injury resulting from the use of Servii or its failure to provide the platform. Servii's liability is limited to the extent permitted by applicable law.</p><p><br></p><p>Users are responsible for any damage resulting from accessing or downloading content from Servii.</p>",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6617da3bf15445e4a49b0b73"
+  },
+  "refund_title": "Third-Party Website & Content",
+  "refund_content": "<p>Servii may contain links to third-party websites. Users' interactions with these sites are subject to their own terms and conditions. Servii does not endorse third-party sites or their content.</p>",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6617da48f15445e4a49b0bf8"
+  },
+  "refund_title": "Governing Law, Arbitration, and Jurisdiction",
+  "refund_content": "<p>These Terms and Conditions are governed by the laws of the Republic of India. Any disputes shall be resolved through negotiation, and if not settled, exclusively in the courts of New Bengaluru.</p>",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66180e867d66c5e07314d254"
+  },
+  "faq_title": "Does Servii provide the choice for plan subscriptions to be automatically renewed?",
+  "faq_content": "<p>The charges for Servii's WhatsApp Business API plan are taken care of through automatic deductions from the client's credit card purchases. This ensures that there are no worries about the plan expiring.</p>",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66180e987d66c5e07314d2b2"
+  },
+  "faq_title": "-----------------Does Servii provide the choice for plan subscriptions to be automatically renewed?",
+  "faq_content": "<p>Certainly, the conversation fee is subject to change depending on the nationality of the message recipient. If your customer base is distributed across different countries, Meta will implement conversation charges based on the prescribed WhatsApp chat rates for each respective country. For specific information about conversation pricing in different countries, kindly refer to the pricing page.</p>",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66180ea67d66c5e07314d2d8"
+  },
+  "faq_title": "What categories of charges apply to conversations on WhatsApp?",
+  "faq_content": "<p>Charges for conversations arise based on the nature of the template you're sending to your users or when you respond to a user's query. </p>",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66180ef07d66c5e07314d3a4"
+  },
+  "faq_title": "What are conversation charges?",
+  "faq_content": "<p>A Conversation Charge is a fee imposed on Businesses when they start a conversation with a user on WhatsApp or reply to their messages using the WhatsApp Business API. This interaction initiates a live chat window that remains active for 24 hours, allowing unlimited exchange of messages between you and the user.</p>",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66180f1d7d66c5e07314d40f"
+  },
+  "faq_title": "Do subscribing to Servii's plan come with any extra fees or setup costs?",
+  "faq_content": "<p>No, Servii levies no additional charges to its subscription amount and setup cost for its on-boarding procedure.</p>",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66180f3e7d66c5e07314d465"
+  },
+  "faq_title": "What are the applicable prices for utilizing Servii's services?",
+  "faq_content": "<p>Servii's pricing structure consists of two components:</p><ol><li>Plan Subscription: You're required to pay the designated subscription fee based on your selected Servii plan (Starter/Plus/Pro).</li><li>WhatsApp Conversation Charges: This refers to the funds you add to your Servii account for starting or responding to conversations with WhatsApp users.</li></ol>",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66180f977d66c5e07314d5ec"
+  },
+  "faq_title": "What are the applicable prices for utilizing Servii's services?",
+  "faq_content": "<p>Servii's pricing structure consists of two components:</p><p>1. Plan Subscription: You're required to pay the designated subscription fee based on your selected Servii plan (Starter/Plus/Pro).</p><p>2.WhatsApp Conversation Charges: This refers to the funds you add to your Servii account for starting or responding to conversations with WhatsApp users.</p>",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661960b6232e8f2fbc862839"
+  },
+  "tc_title": "Introduction",
+  "tc_content": "<p>The term \"Servii\" shall hereinafter be used to refer to the Servii Website and sub-pages with its addresses as servii.com, and the mobile application named Servii, including all its versions and variations.</p><p><br></p><p>By accessing, downloading, and using Servii and its services, you (referred to as \"User,\" \"you,\" \"your,\" or \"client\") agree to be bound by these Terms and Conditions, the Privacy Policy, and all other rules, regulations, and terms of use provided by Servii in relation to any Contest.</p><p><br></p><p>Servii, at its sole discretion, reserves the right to modify or make changes to the Terms and Conditions, rules, and regulations, and terms of use for its services.</p>",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661960d9232e8f2fbc862986"
+  },
+  "tc_title": "Service",
+  "tc_content": "<p>To register or sign up on Servii, you must provide personal data, including Full Name, Email Address, Personal Whatsapp Number, Organization Name, Website, and Password. Registration can be completed through OTP verification via Mobile Number/Email address.</p><p><br></p><p>You agree that the information provided by you is true, complete, and accurate. You must not submit false information or provide details to which you have no right or authority. You are responsible for safeguarding your account and must not disclose your password to any third party. You will be solely responsible for any activities conducted under your password, whether authorized or not. In case of any unauthorized use, you must immediately notify Servii.</p><p><br></p><p>You acknowledge that the personal data provided to Servii will be used, processed, and stored for the proper organization of the Tournament, subject to Servii's Privacy Policy available at servii.com/privacy-policy.html.</p><p><br></p><p>You agree to use the Services in accordance with applicable laws, rules, and regulations, as well as any specific restrictions provided by Servii.</p><p><br></p><p>Servii may make changes to the application or website for maintenance purposes. In such cases, Servii will try to inform you of any scheduled maintenance, but it shall not be liable for any interruption of paid-for Services during maintenance.</p><p><br></p><p>By using Servii, you consent to receiving communications, including announcements, administrative messages, and advertisements, from Servii and its affiliates, subsidiaries, associates, licensors, and partners.</p>",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66196169232e8f2fbc862a4d"
+  },
+  "tc_title": "License and Usage",
+  "tc_content": "<p>Upon payment of the Fees, Servii grants you a limited, non-exclusive, personal, revocable, non-transferable, and non-licensable license to access and use the Solution on a subscription basis, in accordance with these Terms of Use. This license does not transfer ownership or any Intellectual Property rights to you.</p><p><br></p><p>You agree to provide all necessary information for enabling services included in the platform subscription. The Solution provided under these Terms of Use is non-exclusive, and Servii may deal with it in any manner it deems fit, including providing services through third parties.</p>",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6619617c232e8f2fbc862ac4"
+  },
+  "tc_title": "Fees and Payment",
+  "tc_content": "<p>Servii's services are subject to monthly subscription fees, which are non-refundable. Users may also be liable to pay usage fees if their monthly usage exceeds the allowed limit in the subscription plan.</p><p><br></p><p>In case of late payment or material breaches, Servii may suspend or terminate the services. Users are responsible for their own taxes and fees.</p><p><br></p><p>Users must provide accurate purchase and account information for all transactions made via the Site. Recurring charges may be billed without prior approval until cancellation is notified.</p>",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66196190232e8f2fbc862b49"
+  },
+  "tc_title": "Refund and Cancellation Policy",
+  "tc_content": "<p>Servii does not offer refunds for subscription fees. Users can cancel their subscription at any time, and the cancellation will take effect at the end of the current paid term.</p>",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661961a1232e8f2fbc862b8d"
+  },
+  "tc_title": "Intellectual Property",
+  "tc_content": "<p>Users acknowledge that all copyrights, trademarks, and other intellectual property rights related to the Services belong to Servii or its licensors. Users must not copy, distribute, or create derivative works from any content belonging to Servii.</p><p><br></p><p>If Users believe their content has been copied in a way that constitutes copyright infringement, they must provide appropriate information to Servii.</p>",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661961af232e8f2fbc862bf1"
+  },
+  "tc_title": "Limitation of Liability",
+  "tc_content": "<p>Servii and its affiliates shall not be liable for any damages, loss, or injury resulting from the use of Servii or its failure to provide the platform. Servii's liability is limited to the extent permitted by applicable law.</p><p><br></p><p>Users are responsible for any damage resulting from accessing or downloading content from Servii.</p>",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661961bc232e8f2fbc862c75"
+  },
+  "tc_title": "Third-Party Website & Content",
+  "tc_content": "<p>Servii may contain links to third-party websites. Users' interactions with these sites are subject to their own terms and conditions. Servii does not endorse third-party sites or their content.</p>",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661961cc232e8f2fbc862cfe"
+  },
+  "tc_title": "Governing Law, Arbitration, and Jurisdiction",
+  "tc_content": "<p>These Terms and Conditions are governed by the laws of the Republic of India. Any disputes shall be resolved through negotiation, and if not settled, exclusively in the courts of New Bengaluru.</p>",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66196237232e8f2fbc862f4b"
+  },
+  "pp_title": "Information Provided by You:",
+  "pp_content": "<p>Servii may collect and process the following data about you, which you may submit to us:</p><p><br></p><p>a. Full Name</p><p>b. Email Address</p><p>c. Personal WhatsApp Number</p><p>d. Organization Name</p><p>e. Website</p><p>f. Password</p><p><br></p><p>You have the option to register or sign up via OTP verification using your Mobile Number or Email Address. Additionally, any information shared during correspondence with Servii for feedback purposes will also be processed.</p><p><br></p><p>When subscribing to a paid subscription, you'll be required to provide payment details or other financial information. Please note that when providing this information, you will be subject to the terms of use and privacy policies of the respective payment providers.</p>",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66196253232e8f2fbc862fd6"
+  },
+  "pp_title": "Automatically Collected Information",
+  "pp_content": "<p>During your use of the Services, our servers automatically record certain information. This data includes, but is not limited to, time stamps, device and application IDs, Platform interaction data, IP address, Device ID, Application ID, Device Build, Device OS, and cookie information.</p><p><br></p><p>Servii employs cookies and similar technologies on the Platform to recognize you and your device, provide customized services, and collect data about your device and usage. You have the option to disable cookies through your browser settings.</p>",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661963d9232e8f2fbc86363f"
+  },
+  "tc_title": "",
+  "tc_content": "<h2><strong>Information Provided by You:</strong></h2><p><span style=\"color: var(--framer-text-color, #000);\">Servii may collect and process the following data about you, which you may submit to us:</span></p><p><br></p><p><span style=\"color: var(--framer-text-color, #000);\">a. Full Name</span></p><p><span style=\"color: var(--framer-text-color, #000);\">b. Email Address</span></p><p><span style=\"color: var(--framer-text-color, #000);\">c. Personal WhatsApp Number</span></p><p><span style=\"color: var(--framer-text-color, #000);\">d. Organization Name</span></p><p><span style=\"color: var(--framer-text-color, #000);\">e. Website</span></p><p><span style=\"color: var(--framer-text-color, #000);\">f. Password</span></p><p><br></p><p><span style=\"color: var(--framer-text-color, #000);\">You have the option to register or sign up via OTP verification using your Mobile Number or Email Address. Additionally, any information shared during correspondence with Servii for feedback purposes will also be processed.</span></p><p><br></p><p><span style=\"color: var(--framer-text-color, #000);\">When subscribing to a paid subscription, you'll be required to provide payment details or other financial information. Please note that when providing this information, you will be subject to the terms of use and privacy policies of the respective payment providers.</span></p><p>Automatically Collected Information</p><p><span style=\"color: var(--framer-text-color, #000);\">During your use of the Services, our servers automatically record certain information. This data includes, but is not limited to, time stamps, device and application IDs, Platform interaction data, IP address, Device ID, Application ID, Device Build, Device OS, and cookie information.</span></p><h2><br></h2><p><strong style=\"color: var(--framer-text-color, #000);\">-Servii employs cookies and </strong><span style=\"color: var(--framer-text-color, #000);\">similar technologies on the Platform to recognize you and your device, provide customized services, and collect data about your device and usage. You have the option to disable cookies through your browser settings.</span></p><p>Information from Third-Party Services</p><p><span style=\"color: var(--framer-text-color, #000);\">We may also collect personal information from third-party sources and publicly available information.</span></p><p>Third-Party Services</p><p><span style=\"color: var(--framer-text-color, #000);\">Servii utilizes third-party services for various purposes, such as hosting, analytics (e.g., Google Analytics), marketing, and more. These services may collect information from your browser, including cookies, IP addresses, and other identifiers.</span></p><p>Use of Information</p><p><span style=\"color: var(--framer-text-color, #000);\">Servii and/or its partners may use the collected information for various purposes, including but not limited to:</span></p><p><br></p><p><span style=\"color: var(--framer-text-color, #000);\">- Account creation and management</span></p><p><span style=\"color: var(--framer-text-color, #000);\">- Determining eligibility for our services</span></p><p><span style=\"color: var(--framer-text-color, #000);\">- Providing requested information and support</span></p><p><span style=\"color: var(--framer-text-color, #000);\">- Facilitating platform interactions</span></p><p><span style=\"color: var(--framer-text-color, #000);\">- Improving services and platform design</span></p><p><span style=\"color: var(--framer-text-color, #000);\">- Sending commercial and marketing communications</span></p><p><span style=\"color: var(--framer-text-color, #000);\">- Conducting research and surveys, where permissible by law</span></p><p><span style=\"color: var(--framer-text-color, #000);\">- Compliance with legal obligations and regulatory requirements</span></p><p><span style=\"color: var(--framer-text-color, #000);\">- Protecting the rights and safety of individuals and entities</span></p><p><span style=\"color: var(--framer-text-color, #000);\">- Performance of contractual obligations</span></p><p>Sharing and Disclosure of Information</p><p><span style=\"color: var(--framer-text-color, #000);\">We may share your data with third parties under specific circumstances, including:</span></p><p><br></p><p><span style=\"color: var(--framer-text-color, #000);\">- With your consent</span></p><p><span style=\"color: var(--framer-text-color, #000);\">- To fulfill contractual obligations</span></p><p><span style=\"color: var(--framer-text-color, #000);\">- With service providers acting on our behalf</span></p><p><span style=\"color: var(--framer-text-color, #000);\">- As required by law or court order</span></p><p><span style=\"color: var(--framer-text-color, #000);\">- To protect individuals' safety and rights</span></p><p><span style=\"color: var(--framer-text-color, #000);\">- In the context of mergers, acquisitions, or business reorganizations</span></p><p><br></p><p><span style=\"color: var(--framer-text-color, #000);\">Please note that we do not rent, sell, or display your personal information to others. Aggregated non-personally identifiable information may be shared publicly and with partners.</span></p><p>Data Retention</p><p><span style=\"color: var(--framer-text-color, #000);\">We retain data for varying periods depending on the nature of the information and context. We retain data as required by applicable law and for as long as necessary to fulfill purposes outlined in this Policy.</span></p><p>Data Subject Rights</p><p><span style=\"color: var(--framer-text-color, #000);\">You have the right to access, correct, update, or request deletion of your information. Please refer to your accounts on our Platform or reach out to us at support@servii.com. You can also withdraw consent and exercise other rights as provided by applicable law.</span></p><p>Data Security and Protection</p><p><span style=\"color: var(--framer-text-color, #000);\">Servii implements appropriate technical and physical safeguards to protect information against unauthorized access, alteration, or destruction. While we strive to maintain security, we cannot guarantee complete immunity from breaches.</span></p><p>Cross-Border Transfers</p><p><span style=\"color: var(--framer-text-color, #000);\">Information may be transferred and stored outside your jurisdiction, but only when adequate protection and lawful transfer mechanisms are in place.</span></p><p>Changes to Our Privacy Policy</p><p><span style=\"color: var(--framer-text-color, #000);\">Servii reserves the right to update and modify this Policy. It is advisable to review this Policy periodically for any changes. Continued use of our Platform and Services implies consent to the prevailing Policy.</span></p><p>For inquiries, feedback, or concerns related to this Policy, please contact us at support@servii.com</p>",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661963e1232e8f2fbc86364d"
+  },
+  "tc_title": "www",
+  "tc_content": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661963e6232e8f2fbc863658"
+  },
+  "tc_title": "",
+  "tc_content": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66196404232e8f2fbc8636b3"
+  },
+  "tc_title": "yugugv",
+  "tc_content": "<h2><strong>Information Provided by You:</strong></h2><p><span style=\"color: var(--framer-text-color, #000);\">Servii may collect and process the following data about you, which you may submit to us:</span></p><p><br></p><p><span style=\"color: var(--framer-text-color, #000);\">a. Full Name</span></p><p><span style=\"color: var(--framer-text-color, #000);\">b. Email Address</span></p><p><span style=\"color: var(--framer-text-color, #000);\">c. Personal WhatsApp Number</span></p><p><span style=\"color: var(--framer-text-color, #000);\">d. Organization Name</span></p><p><span style=\"color: var(--framer-text-color, #000);\">e. Website</span></p><p><span style=\"color: var(--framer-text-color, #000);\">f. Password</span></p><p><br></p><p><span style=\"color: var(--framer-text-color, #000);\">You have the option to register or sign up via OTP verification using your Mobile Number or Email Address. Additionally, any information shared during correspondence with Servii for feedback purposes will also be processed.</span></p><p><br></p><p><span style=\"color: var(--framer-text-color, #000);\">When subscribing to a paid subscription, you'll be required to provide payment details or other financial information. Please note that when providing this information, you will be subject to the terms of use and privacy policies of the respective payment providers.</span></p><p>Automatically Collected Information</p><p><span style=\"color: var(--framer-text-color, #000);\">During your use of the Services, our servers automatically record certain information. This data includes, but is not limited to, time stamps, device and application IDs, Platform interaction data, IP address, Device ID, Application ID, Device Build, Device OS, and cookie information.</span></p><p><br></p><h2><strong style=\"color: var(--framer-text-color, #000);\">Servii employs cookies and similar t</strong><span style=\"color: var(--framer-text-color, #000);\">echnologies on the Platform to recognize you and your device, provide customized services, and collect data about your device and usage. You have the option to disable cookies through your browser settings.</span></h2><p>Information from Third-Party Services</p><p><span style=\"color: var(--framer-text-color, #000);\">We may also collect personal information from third-party sources and publicly available information.</span></p><p>Third-Party Services</p><p><span style=\"color: var(--framer-text-color, #000);\">Servii utilizes third-party services for various purposes, such as hosting, analytics (e.g., Google Analytics), marketing, and more. These services may collect information from your browser, including cookies, IP addresses, and other identifiers.</span></p><p>Use of Information</p><p><span style=\"color: var(--framer-text-color, #000);\">Servii and/or its partners may use the collected information for various purposes, including but not limited to:</span></p><p><br></p><p><span style=\"color: var(--framer-text-color, #000);\">- Account creation and management</span></p><p><span style=\"color: var(--framer-text-color, #000);\">- Determining eligibility for our services</span></p><p><span style=\"color: var(--framer-text-color, #000);\">- Providing requested information and support</span></p><p><span style=\"color: var(--framer-text-color, #000);\">- Facilitating platform interactions</span></p><p><span style=\"color: var(--framer-text-color, #000);\">- Improving services and platform design</span></p><p><span style=\"color: var(--framer-text-color, #000);\">- Sending commercial and marketing communications</span></p><p><span style=\"color: var(--framer-text-color, #000);\">- Conducting research and surveys, where permissible by law</span></p><p><span style=\"color: var(--framer-text-color, #000);\">- Compliance with legal obligations and regulatory requirements</span></p><p><span style=\"color: var(--framer-text-color, #000);\">- Protecting the rights and safety of individuals and entities</span></p><p><span style=\"color: var(--framer-text-color, #000);\">- Performance of contractual obligations</span></p><p>Sharing and Disclosure of Information</p><p><span style=\"color: var(--framer-text-color, #000);\">We may share your data with third parties under specific circumstances, including:</span></p><p><br></p><p><span style=\"color: var(--framer-text-color, #000);\">- With your consent</span></p><p><span style=\"color: var(--framer-text-color, #000);\">- To fulfill contractual obligations</span></p><p><span style=\"color: var(--framer-text-color, #000);\">- With service providers acting on our behalf</span></p><p><span style=\"color: var(--framer-text-color, #000);\">- As required by law or court order</span></p><p><span style=\"color: var(--framer-text-color, #000);\">- To protect individuals' safety and rights</span></p><p><span style=\"color: var(--framer-text-color, #000);\">- In the context of mergers, acquisitions, or business reorganizations</span></p><p><br></p><p><span style=\"color: var(--framer-text-color, #000);\">Please note that we do not rent, sell, or display your personal information to others. Aggregated non-personally identifiable information may be shared publicly and with partners.</span></p><p>Data Retention</p><p><span style=\"color: var(--framer-text-color, #000);\">We retain data for varying periods depending on the nature of the information and context. We retain data as required by applicable law and for as long as necessary to fulfill purposes outlined in this Policy.</span></p><p>Data Subject Rights</p><p><span style=\"color: var(--framer-text-color, #000);\">You have the right to access, correct, update, or request deletion of your information. Please refer to your accounts on our Platform or reach out to us at support@servii.com. You can also withdraw consent and exercise other rights as provided by applicable law.</span></p><p>Data Security and Protection</p><p><span style=\"color: var(--framer-text-color, #000);\">Servii implements appropriate technical and physical safeguards to protect information against unauthorized access, alteration, or destruction. While we strive to maintain security, we cannot guarantee complete immunity from breaches.</span></p><p>Cross-Border Transfers</p><p><span style=\"color: var(--framer-text-color, #000);\">Information may be transferred and stored outside your jurisdiction, but only when adequate protection and lawful transfer mechanisms are in place.</span></p><p>Changes to Our Privacy Policy</p><p><span style=\"color: var(--framer-text-color, #000);\">Servii reserves the right to update and modify this Policy. It is advisable to review this Policy periodically for any changes. Continued use of our Platform and Services implies consent to the prevailing Policy.</span></p><p>For inquiries, feedback, or concerns related to this Policy, please contact us at support@servii.com</p>",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66196490232e8f2fbc8639a1"
+  },
+  "tc_title": "",
+  "tc_content": "<h1><br></h1><h1><span style=\"color: var(--framer-text-color, #000);\">You have the option to register or sign up via OTP verification using your Mobile Number or Email Address. Additionally, any information shared during correspondence with Servii for feedback purposes will also be processed.</span></h1><p><br></p><p><span style=\"color: var(--framer-text-color, #000);\">When subscribing to a paid subscription, you'll be required to provide payment details or other financial information. Please note that when providing this information, you will be subject to the terms of use and privacy policies of the respective payment providers.</span></p><p>Automatically Collected Information</p><p><span style=\"color: var(--framer-text-color, #000);\">During your use of the Services, our servers automatically record certain information. This data includes, but is not limited to, time stamps, device and application IDs, Platform interaction data, IP address, Device ID, Application ID, Device Build, Device OS, and cookie information.</span></p><p><br></p><h2><strong style=\"color: var(--framer-text-color, #000);\">Servii employs cookies and similar t</strong></h2><h2><br></h2>",
+  "__v": 0
+}]
