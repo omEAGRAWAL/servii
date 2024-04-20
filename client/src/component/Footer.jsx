@@ -25,11 +25,11 @@ function Footerbars() {
                   <Footer.Link href="#" className="hidden md:block">
                     About us{" "}
                   </Footer.Link>
-                  <Footer.Link href="#" className="hidden md:bkock">
+                  <Footer.Link href="#" className="hidden md:block">
                     Our Services
                   </Footer.Link>
                   <Footer.Link href="#">FAQs</Footer.Link>
-                  <Footer.Link href="#" className="hidden md:bkock">
+                  <Footer.Link href="#" className="hidden md:block">
                     Contact us
                   </Footer.Link>
                   <Footer.Link href="#">Privacy & Policy</Footer.Link>

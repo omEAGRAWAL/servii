@@ -6,7 +6,7 @@ import Second from "../component/Second.jsx";
 import Formpage from "../component/Formpage.jsx";
 import Fifth from "../component/Fifth.jsx";
 import Kndustries from "../component/Kndustries.jsx";
-// import FAQ from "../component/FAQ.jsx";
+import FAQ from "../component/FAQ.jsx";
 import Footer from "../component/Footer.jsx";
 
 function Home() {
@@ -37,7 +37,7 @@ function Home() {
         <Formpage />
       </div>
 
-      {/* <FAQ /> */}
+      <FAQ />
       <Footer />
     </div>
   );
