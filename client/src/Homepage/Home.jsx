@@ -23,7 +23,7 @@ function Home() {
 
   return (
     <div className="bg-white text-black">
-      <Header scrollToFormPage={scrollToFormPage} />
+      {/* <Header scrollToFormPage={scrollToFormPage} /> */}
       <Second scrollToFormPage={scrollToFormPage} />
       <Solution scrollToFormPage={scrollToFormPage} />
       <Fifth scrollToFormPage={scrollToFormPage} />

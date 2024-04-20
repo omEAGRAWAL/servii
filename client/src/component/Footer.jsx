@@ -15,15 +15,23 @@ function Footerbars() {
         container
       >
         <div className="flex flex-col w-full ">
-          <div className="  w-full   flex flex-row">
-            <Footer.Brand href="#" src={logo} alt="Flowbite Logo" />
-            <div className="flex justify-center items-center w-4/5">
+          <div className="  w-full   flex flex-col md:flex-row  ">
+            <div className="order-2 mt-9 md:mt-0 ">
+              <Footer.Brand href="#" src={logo} alt="Flowbite Logo" />
+            </div>
+            <div className="flex md:justify-center md:items-center w-full md:w-4/5 md:order-2">
               <div className="w-full">
-                <Footer.LinkGroup className="flex justify-center font-montserrat text-white text-md align-left">
-                  <Footer.Link href="#">About us </Footer.Link>
-                  <Footer.Link href="#">Our Services</Footer.Link>
+                <Footer.LinkGroup className="flex md:justify-center  flex-row font-montserrat text-white  text-sm md:text-md gap-1">
+                  <Footer.Link href="#" className="hidden md:block">
+                    About us{" "}
+                  </Footer.Link>
+                  <Footer.Link href="#" className="hidden md:bkock">
+                    Our Services
+                  </Footer.Link>
                   <Footer.Link href="#">FAQs</Footer.Link>
-                  <Footer.Link href="#">Contact us</Footer.Link>
+                  <Footer.Link href="#" className="hidden md:bkock">
+                    Contact us
+                  </Footer.Link>
                   <Footer.Link href="#">Privacy & Policy</Footer.Link>
                   <Footer.Link href="#">Terms & Condition</Footer.Link>
                 </Footer.LinkGroup>
@@ -31,15 +39,15 @@ function Footerbars() {
             </div>
           </div>
 
-          <div className="flex flex-row items-center justify-between pt-7">
+          <div className="flex flex-row items-center justify-between md:pt-7 pt-1 ">
             <Footer.Copyright
               href="#"
               by="Servii Automotives Pvt. Ltd"
               year={2024}
-              className="font-montserrat text-white text-md"
+              className="font-montserrat text-white text-md hidden md:block"
             />
 
-            <Footer.LinkGroup className="flex justify-center font-montserrat text-md">
+            <Footer.LinkGroup className="flex justify-center order-2 font-montserrat text-md">
               <Footer.Link href="#" className="">
                 <AiOutlineInstagram size={25} className="" />
               </Footer.Link>
@@ -52,7 +60,7 @@ function Footerbars() {
             </Footer.LinkGroup>
 
             {/* <img src={bharat} alt="bharat" className="w-40" /> */}
-            <div className="flex flex-row items-center ">
+            <div className="flex flex-row items-center md:order-2 ">
               <div className="">
                 Made with{" "}
                 <FaHeart size={25} color="red" className="inline mr-1" />

@@ -1,10 +1,13 @@
 /* eslint-disable no-unused-vars */
+import Header1 from "../component/Header1.jsx";
 
 import { LuDot } from "react-icons/lu";
 import { getTerms, addTerms, updateTerms, deleteTerms } from "./apiFunction.js";
 import { useState, useEffect } from "react";
 
 function Refund() {
+  const createMarkup = (text) => ({ __html: text });
+
   const [terms, setTerms] = useState([]);
 
   useEffect(() => {
@@ -17,6 +20,7 @@ function Refund() {
 
   return (
     <div>
+      <Header1 />
       <div
         className="p-10 "
         style={{
@@ -55,7 +59,9 @@ function Refund() {
                 textAlign: "left",
               }}
             >
-              {term.refund_content}
+              <div
+                dangerouslySetInnerHTML={createMarkup(term.refund_content)}
+              ></div>
             </div>
           </div>
         ) : null

@@ -10,7 +10,7 @@ function Solutions({ scrollToFormPage }) {
   return (
     <div className=" m-5 md:p-20" id="solutions">
       <div className="flex flex-col md:flex-row md:ml-20 p-5 md:p-0 mt-20 pt-20 items-center justify-centre">
-        <div className="m-5 ">
+        <div className="">
           {/* <label className="text-[#349f50] border font-montserrat w-20 bg-white border-gray-300 rounded   text-sm ">
             Solutions
           </label> */}
@@ -37,52 +37,51 @@ function Solutions({ scrollToFormPage }) {
         </div>
         <div className="md:w-1/2 w-full  mt-10">
           <div className="flex flex-col md:flex-row justify-center items-center ">
-            <div className="flex flex-col justify-center items-center   md:w-1/2 md:p-10 md:pl-0 ">
+            <div className="flex flex-col justify-centre items-center md:justify-normal md:items-start   md:w-1/2 md:p-10 p-5 ">
               <img src={frame} alt="Your Image" className=" w-16 md:w-20 " />
               <p className="font-abhaya-libre text-xl/9">Marketing</p>
 
               <div className="font-montserrat text-gray-700 text-shadow-md ">
-                <p>
+                <p className="text-center md:text-start">
                   Driving High Quality Conversations using WhatsApp Templates in
                   full- funnel conversions
                 </p>
               </div>
             </div>
-            <div className="flex flex-col w-1/2 p-10">
+
+            <div className="flex flex-col justify-centre items-center md:justify-normal md:items-start p-5 md:w-1/2 md:p-10">
               <img src={sales} alt="Your Image" className="w-20" />
               <p className="font-abhaya-libre text-xl/9">Marketing</p>
 
               <div className="font-montserrat text-gray-700 text-shadow-md ">
-                <p>Utilizing AI bots to </p>
-                <p>automate conversations</p>
-                <p>streamlines lead capture </p>
-                <p> for sales, tripling your</p>
-                <p> sales team efficiency.</p>
+                <p className="text-center md:text-start">
+                  Utilizing AI bots to automate conversations streamlines lead
+                  capture for sales, tripling your sales team efficiency.
+                </p>
               </div>
             </div>
           </div>
           <div className="flex flex-col md:flex-row justify-center items-centre ">
-            <div className="flex flex-col   w-1/2 p-10 pl-0 ">
+            <div className="flex flex-col justify-centre items-center md:justify-normal md:items-start  md:w-1/2 md:p-10 p-5 ">
               <img src={customersupport} alt="Your Image" className="w-20" />
               <p className="font-abhaya-libre text-xl/9">Marketing</p>
 
               <div className="font-montserrat text-gray-700 text-shadow-md">
-                <p>Integrate Servii-WA API for</p>
-                <p>game-changing 3-way </p>
-                <p>communication customer </p>
-                <p>support.</p>
+                <p className="text-center md:text-start">
+                  Integrate Servii-WA API for game-changing 3-way communication
+                  customer support.
+                </p>
               </div>
             </div>
-            <div className="flex flex-col w-1/2 p-10">
+            <div className="flex flex-col  justify-centre items-center md:justify-normal md:items-start p-5 md:w-1/2 md:p-10">
               <img src={ecommerce} alt="Your Image" className="w-20" />
               <p className="font-abhaya-libre text-xl/9">Marketing</p>
 
               <div className="font-montserrat text-gray-700 text-shadow-md">
-                <p>Elevate your store on</p>
-                <p>WhatsApp, enhancing</p>
-                <p>customer experiences with</p>
-                <p>seamless, on-demand</p>
-                <p>digital services.</p>
+                <p className="text-center md:text-start">
+                  Elevate your store on WhatsApp, enhancing customer experiences
+                  with seamless, on-demand digital services.
+                </p>
               </div>
             </div>
           </div>

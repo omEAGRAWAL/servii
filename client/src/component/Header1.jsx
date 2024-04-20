@@ -3,7 +3,7 @@ import { Navbar, Button, NavbarBrand } from "flowbite-react";
 import logo from "../asset/servii_logo.svg";
 import "tailwindcss/tailwind.css";
 
-function Header1({ scrollToFormPage }) {
+function Header1() {
   return (
     <div className="flex justify-center items-centre ">
       <Navbar className="flex gap-2 md:order-2 m-4 p-2    g-white shadow-xl rounded-2xl fixed top-0 z-50 w-4/5">
@@ -20,8 +20,7 @@ function Header1({ scrollToFormPage }) {
           <Button
             color="success"
             className="bg-[#12bf7c]"
-            // href="#formpage"
-            onClick={scrollToFormPage}
+            href="https://app1.servii.in/login"
           >
             Book a demo
           </Button>
@@ -29,12 +28,12 @@ function Header1({ scrollToFormPage }) {
           <Navbar.Toggle className="bg-white text-black" />
         </div>
         <Navbar.Collapse className=" bg-white text-black">
-          <Navbar.Link href="#">Home</Navbar.Link>
-          <Navbar.Link href="#solutions">Solutions</Navbar.Link>
-          <Navbar.Link href="#features">Features</Navbar.Link>
-          <Navbar.Link href="#industries">Industries</Navbar.Link>
-          <Navbar.Link href="#faq">FAQs</Navbar.Link>
-          <Navbar.Link href="#">Contact us</Navbar.Link>
+          <Navbar.Link href="/#">Home</Navbar.Link>
+          <Navbar.Link href="/#solutions">Solutions</Navbar.Link>
+          <Navbar.Link href="/#features">Features</Navbar.Link>
+          <Navbar.Link href="/#industries">Industries</Navbar.Link>
+          <Navbar.Link href="/#faq">FAQs</Navbar.Link>
+          <Navbar.Link href="/#">Contact us</Navbar.Link>
         </Navbar.Collapse>
       </Navbar>
     </div>

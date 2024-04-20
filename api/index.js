@@ -8,6 +8,12 @@ const jwt = require("jsonwebtoken");
 const mongoose = require("mongoose");
 const nodemailer = require("nodemailer");
 
+// const accountSid = "286259497892951";
+// const authToken =
+//   "EAANOahIsUOABO5iUcRdxJfMQLFbf3djLCDOyIOmNJM0o9a5PPWMnINTY5Ph5FFAao99Vf0fdZAZCzePXisYLhcvIgAs5DRTUXqCxJoSM4GZAS2oZCoG1oRJFqiqqzxV7Td05TM81x0FZBpsPO31NGQpA6HPyoZCS6E5LpVLdOpR0TSBDoxA1ZCxjGqxLDoLZCObMf0QbTasKXZBOHDv6h";
+
+// const client = require("twilio")(accountSid, authToken);
+
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
@@ -63,6 +69,19 @@ const Contact = mongoose.model("Contact", schema);
 const Terms = mongoose.model("Terms", terms);
 
 app.post("/api/contact", async (req, res) => {
+  // try {
+  //   client.messages
+  //     .create({
+  //       body: "This is a test message from Twilio!",
+  //       from: "whatsapp:278307482025931",
+  //       to: `whatsapp:${req.body.phoneNumber}`,
+  //     })
+  //     .then((message) => console.log(message.sid))
+  //     .catch((err) => console.error(err));
+  // } catch (error) {
+  //   console.error("Error submitting form:", error);
+  //   // Handle errors (e.g., display an error message)
+  // }
   try {
     // Send mail with defined transport object
     let info = await transporter.sendMail({

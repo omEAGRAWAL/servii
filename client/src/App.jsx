@@ -18,7 +18,7 @@ import Faq_admin from "./admin/Faq_admin";
 function App() {
   return (
     <BrowserRouter>
-      {/* <Header /> */}
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
