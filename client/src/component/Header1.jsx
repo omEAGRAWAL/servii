@@ -22,7 +22,7 @@ function Header1() {
             className="bg-[#12bf7c]"
             href="https://app1.servii.in/login"
           >
-            Book a demo
+            Login/Sign Up
           </Button>
 
           <Navbar.Toggle className="bg-white text-black" />
