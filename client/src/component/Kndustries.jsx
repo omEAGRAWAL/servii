@@ -22,7 +22,7 @@ function Industries() {
       >
         <div className=" w-full md:w-1/2  p-5 md:p-0 flex flex-col justify-center items-center md:m-10 md:mr-20 md:pr-10">
           <div className="md:m-5">
-            <label className="text-[#12BF7C] border font-montserrat bg-white border-gray-300 rounded   p-1 ">
+            <label className="text-[#12BF7C] border font-montserrat text-sm bg-white border-gray-300 rounded pl-1 pr-1   ">
               Industries
             </label>
 
