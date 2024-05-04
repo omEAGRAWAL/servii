@@ -169,7 +169,11 @@ function Industries() {
             </div>
           )}
           {activeDiv === "fintech" && (
-            <div>
+            <div
+              className={`transition-section ${
+                activeDiv === "fintech" ? "active" : ""
+              }`}
+            >
               <div className="">
                 <p className=" font-montserrat ">
                   Servii completely transforms the way enterprises engage with
@@ -182,7 +186,11 @@ function Industries() {
             </div>
           )}
           {activeDiv === "restaurants" && (
-            <div>
+            <div
+              className={`transition-section ${
+                activeDiv === "restaurants" ? "active" : ""
+              }`}
+            >
               <div className="">
                 <p className=" font-montserrat ">
                   Servii completely transforms the way enterprises engage with
@@ -195,7 +203,11 @@ function Industries() {
             </div>
           )}
           {activeDiv === "retail" && (
-            <div>
+            <div
+              className={`transition-section ${
+                activeDiv === "retail" ? "active" : ""
+              }`}
+            >
               <div className="">
                 <p className=" font-montserrat ">
                   Servii completely transforms the way enterprises engage with
