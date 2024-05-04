@@ -1,0 +1,11 @@
+/* Add this CSS in your stylesheets */
+.transition-section {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  }
+  
+  .transition-section.active {
+    opacity: 1;
+    
+  }
+  

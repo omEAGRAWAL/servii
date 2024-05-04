@@ -7,6 +7,7 @@ import education from "../asset/industries/education.png";
 import fintech from "../asset/industries/fintech.png";
 import restaurants from "../asset/industries/restaurants.png";
 import retail from "../asset/industries/retail.png";
+import "./Industry.css";
 function Industries() {
   const [activeDiv, setActiveDiv] = useState("automotive");
 
@@ -116,7 +117,11 @@ function Industries() {
         {/* image section */}
         <div className=" w-full md:w-1/2  p-5 text-xs md:text-sm   md:mr-20">
           {activeDiv === "automotive" && (
-            <div>
+            <div
+              className={`transition-section ${
+                activeDiv === "automotive" ? "active" : ""
+              }`}
+            >
               <div className=" ">
                 <p className=" font-montserrat ">
                   Servii completely transforms the way enterprises engage with
@@ -129,7 +134,11 @@ function Industries() {
             </div>
           )}
           {activeDiv === "ecommerce" && (
-            <div>
+            <div
+              className={`transition-section ${
+                activeDiv === "ecommerce" ? "active" : ""
+              }`}
+            >
               {" "}
               <div className="">
                 <p className=" font-montserrat ">
@@ -143,7 +152,11 @@ function Industries() {
             </div>
           )}
           {activeDiv === "education" && (
-            <div>
+            <div
+              className={`transition-section ${
+                activeDiv === "education" ? "active" : ""
+              }`}
+            >
               <div className="">
                 <p className=" font-montserrat ">
                   Servii completely transforms the way enterprises engage with
