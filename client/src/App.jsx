@@ -3,7 +3,7 @@ import "./App.css";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./component/Header1";
-
+import Notfound from "./component/Notfound";
 import Home from "./Homepage/Home";
 import Termsandcondition from "./admin/Termsandcondition";
 import Refund from "./admin/Refund";
@@ -22,7 +22,6 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
         <Route path="/tc" element={<Termsandcondition />} />
         <Route path="/refund" element={<Refund />} />
         <Route path="/privacy" element={<Privacy />} />
@@ -31,6 +30,7 @@ function App() {
         <Route path="/admin/tc" element={<Terms_condition_admin />} />
         <Route path="/admin/refund" element={<Refund_admin />} />
         <Route path="/admin/faq" element={<Faq_admin />} />
+        <Route path="/*" element={<Notfound />} />
 
         {/* <Route path="/privacyPolicy" element={<PrivacyPolicy />} /> */}
       </Routes>
