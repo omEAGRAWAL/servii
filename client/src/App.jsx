@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import "./App.css";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./component/Header1";
 
 import Home from "./Homepage/Home";
@@ -17,7 +17,7 @@ import Faq_admin from "./admin/Faq_admin";
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -33,7 +33,7 @@ function App() {
 
         {/* <Route path="/privacyPolicy" element={<PrivacyPolicy />} /> */}
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
