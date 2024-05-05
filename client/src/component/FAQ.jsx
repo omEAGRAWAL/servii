@@ -27,10 +27,10 @@ function Privacy() {
   return (
     <div id="faqs">
       <div
-        className="p-10 "
+        className="p-5 text-2xl font-bold md:text-4xl"
         style={{
           fontFamily: "Abhaya Libre Medium",
-          fontSize: "48px",
+
           fontWeight: 500,
           lineHeight: "56.63px",
           textAlign: "center",
