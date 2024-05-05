@@ -106,6 +106,20 @@ function Privacy() {
           </div>
         ) : null
       )}
+
+      <div
+        className="md:ml-10 md:mr-10  m-5  text-base md:text-xl pd-20 md:pl-20 pt-5 "
+        style={{
+          fontFamily: "Abhaya Libre Medium",
+
+          fontWeight: 600,
+          lineHeight: "28.31px",
+          textAlign: "left",
+        }}
+      >
+        For inquiries, feedback, or concerns related to this Policy, please
+        contact us at support@servii.com.
+      </div>
     </div>
   );
 }

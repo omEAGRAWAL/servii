@@ -14,6 +14,7 @@ import Privacy_Admin from "./admin/Privacy_Admin";
 import Terms_condition_admin from "./admin/Terms_condition_admin";
 import Refund_admin from "./admin/Refund_admin";
 import Faq_admin from "./admin/Faq_admin";
+import Footer from "./component/Footer.jsx";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
 
         {/* <Route path="/privacyPolicy" element={<PrivacyPolicy />} /> */}
       </Routes>
+      <Footer />
     </Router>
   );
 }

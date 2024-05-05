@@ -25,7 +25,7 @@ function Privacy() {
   }, []);
 
   return (
-    <div>
+    <div id="faqs">
       <div
         className="p-10 "
         style={{

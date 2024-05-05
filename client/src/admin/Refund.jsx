@@ -1,13 +1,19 @@
 /* eslint-disable no-unused-vars */
-import Header1 from "../component/Header1.jsx";
-
+// //black single dot icon
 import { LuDot } from "react-icons/lu";
-import { getTerms, addTerms, updateTerms, deleteTerms } from "./apiFunction.js";
+
+import serviiTerms from "../asset/servii.terms.json";
+
+import {
+  getTerms,
+  addTerms,
+  updateTerms,
+  deleteTerms,
+} from "../admin/apiFunction.js";
 import { useState, useEffect } from "react";
 
-function Refund() {
+function Privacy() {
   const createMarkup = (text) => ({ __html: text });
-
   const [terms, setTerms] = useState([]);
 
   useEffect(() => {
@@ -20,9 +26,8 @@ function Refund() {
 
   return (
     <div>
-      <Header1 />
       <div
-        className="p-10 "
+        className="p-10 mt-20 md:pt-20"
         style={{
           fontFamily: "Abhaya Libre Medium",
           fontSize: "48px",
@@ -31,16 +36,19 @@ function Refund() {
           textAlign: "center",
         }}
       >
-        Refund Conditions
+        Refund
       </div>
       {terms.map((term) =>
         term.refund_title != null && term.refund_content != null ? (
-          <div key={term._id} className="pl-20  pr-10 flex flex-col">
+          <div
+            key={term._id}
+            className="md:ml-20  md:mr-10 m-5 flex flex-col text-[#111111]"
+          >
             <div
-              className="pl-10 pr-10 pt-10 "
+              className="md:ml-10 md:mr-10  m-5  text-base md:text-2xl "
               style={{
-                fontFamily: "Abhaya Libre SemiBold",
-                fontSize: "24px",
+                fontFamily: "Abhaya Libre Medium",
+
                 fontWeight: 600,
                 lineHeight: "28.31px",
                 textAlign: "left",
@@ -50,10 +58,11 @@ function Refund() {
               {term.refund_title}
             </div>
             <div
-              className="pt-5 pl-16"
+              className="mt-5 md:ml-16 md:mr-16 ml-5 mr-5 text-sm md:text-lg
+              p-1  text-[#828282]"
               style={{
                 fontFamily: "Montserrat",
-                fontSize: "18px",
+
                 fontWeight: 400,
                 lineHeight: "21.94px",
                 textAlign: "left",
@@ -61,13 +70,28 @@ function Refund() {
             >
               <div
                 dangerouslySetInnerHTML={createMarkup(term.refund_content)}
-              ></div>
+              />
+              {/* {term.pp_content} */}
             </div>
           </div>
         ) : null
       )}
+
+      <div
+        className="md:ml-10 md:mr-10  m-5  text-base md:text-xl pd-20 md:pl-20 pt-5 "
+        style={{
+          fontFamily: "Abhaya Libre Medium",
+
+          fontWeight: 600,
+          lineHeight: "28.31px",
+          textAlign: "left",
+        }}
+      >
+        For inquiries, feedback, or concerns related to this Policy, please
+        contact us at support@servii.com.
+      </div>
     </div>
   );
 }
 
-export default Refund;
+export default Privacy;

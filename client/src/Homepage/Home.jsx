@@ -37,8 +37,8 @@ function Home() {
         <Formpage />
       </div>
 
-      {/* <FAQ /> */}
-      <Footer />
+      <FAQ />
+      {/* <Footer /> */}
     </div>
   );
 }
