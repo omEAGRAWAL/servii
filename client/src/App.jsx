@@ -21,7 +21,7 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<Termsandcondition />} />
+        {/* <Route path="/" element={<Termsandcondition />} /> */}
         <Route path="/tc" element={<Termsandcondition />} />
         <Route path="/refund" element={<Refund />} />
         <Route path="/privacy" element={<Privacy />} />
