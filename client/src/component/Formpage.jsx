@@ -15,7 +15,7 @@ function InputField({ label, placeholder, name, formData, setFormData }) {
   };
 
   return (
-    <div className="flex flex-col w-full font-abhaya-libre" id="formpage">
+    <div className="flex flex-col w-full font-abhaya-libre " id="formpage">
       <label className="text-xl font-semibold leading-6 text-neutral-700">
         {label}
       </label>
@@ -135,7 +135,7 @@ function MyComponent() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row md:p-20 p-5 ">
+    <div className="flex flex-col md:flex-row md:p-20 p-5 mt-20 ">
       <div className=" items-center hidden md:flex justify-center">
         <img src={contact} alt="mmmmmmmmmmmmmm" />
       </div>

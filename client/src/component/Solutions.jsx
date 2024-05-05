@@ -8,8 +8,8 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 
 function Solutions({ scrollToFormPage }) {
   return (
-    <div className=" m-5 md:p-20" id="solutions">
-      <div className="flex flex-col md:flex-row md:ml-20 p-5 md:p-0 mt-20 pt-20 items-center justify-centre">
+    <div className=" m-5 pt-0 md:p-20" id="solutions">
+      <div className="flex flex-col md:flex-row md:ml-20 p-5  md:p-0 mt-20  pt-0 md:pt-20 items-center justify-centre">
         <div className="">
           {/* <label className="text-[#349f50] border font-montserrat w-20 bg-white border-gray-300 rounded   text-sm ">
             Solutions

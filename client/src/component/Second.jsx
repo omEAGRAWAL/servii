@@ -11,7 +11,10 @@ import what_right from "../asset/whatsssss.png";
 import { FaArrowRight } from "react-icons/fa";
 function Second({ scrollToFormPage }) {
   return (
-    <div className="bg-white text-black bg-no-repeat pt-20 mt-20 " id="homes">
+    <div
+      className="bg-white text-black bg-no-repeat pt-0 md:pt-20 mt-20 "
+      id="homes"
+    >
       <div
         className="absolute bg-cover hidden md:block "
         style={{
@@ -48,7 +51,7 @@ function Second({ scrollToFormPage }) {
         <div className="font-abhaya-libre text-3xl md:text-5xl lg:text-6xl font-semibold leading-tight text-center pt-20 md:w-3/5">
           <p>One smart Conversational AI tool for your business</p>
         </div>
-        <div className="font-montserrat text-base text-m md:text-lg lg:text-xl font-normal leading-normal text-center pt-10">
+        <div className="font-montserrat  text-sm md:text-lg lg:text-xl font-normal text-[#000000] text-center p-10">
           <p>
             Get ready for effortless marketing, sales, and customer
             conversations

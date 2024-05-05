@@ -16,9 +16,9 @@ function Industries() {
   };
 
   return (
-    <div className="pt-20  mt-10">
+    <div className="md:pt-20  md:mt-10">
       <div
-        className="flex flex-col md:flex-row p-5  md:m-20  m-5 items-center justify-center bg-[#FAFFFA] rounded-3xl"
+        className="flex flex-col md:flex-row   md:m-20  m-5 items-center justify-center bg-[#FAFFFA] rounded-3xl"
         id="industries"
       >
         <div className=" w-full md:w-1/2  p-5 md:p-0 flex flex-col justify-center items-center md:m-10 md:mr-20 md:pr-10">
@@ -27,15 +27,15 @@ function Industries() {
               Industries
             </label>
 
-            <div className="font-abhaya-libre text-xl md:text-3xl lg:text-4xl font-semibold mt-20 pr-10 ">
+            <div className="font-abhaya-libre text-xl md:text-3xl lg:text-4xl font-semibold mt-10 pr-10 ">
               <p>Custom WhatsApp Solutions for Industries</p>
             </div>
           </div>
 
           {/* button sextion */}
 
-          <div className="flex flex-wrap justify-center font-abhaya-libre  text-gray-600   font-medium mt-10 md:mt-0   text-sm md:text-2xl">
-            <div className=" w-1/3 md:w-1/2  p-2 pl-0    h-20">
+          <div className="flex flex-wrap justify-center font-abhaya-libre  text-gray-600   font-medium mt-10 md:mt-20   text-sm md:text-2xl">
+            <div className=" w-1/3 md:w-1/2  p-2 h-14 md:h-20   ">
               <button
                 className={` w-full h-full bg-white hover:text-white 
               rounded-xl from-black  via-emerald-900 to-black hover:bg-gradient-to-l ${
@@ -47,7 +47,7 @@ function Industries() {
                 Automotive
               </button>
             </div>
-            <div className=" w-1/3 h-20  md:w-1/2  p-2">
+            <div className=" w-1/3   md:w-1/2  p-2 h-14 md:h-20">
               <button
                 className={` w-full h-full bg-white hover:text-white 
                rounded-xl from-black  via-emerald-900 to-black hover:bg-gradient-to-l ${
@@ -59,7 +59,7 @@ function Industries() {
                 Ecommerce
               </button>
             </div>
-            <div className="w-1/3 h-20 md:w-1/2 p-2 pl-0">
+            <div className="w-1/3  md:w-1/2 p-2  h-14 md:h-20">
               {" "}
               <button
                 className={` w-full h-full bg-white hover:text-white  
@@ -72,7 +72,7 @@ function Industries() {
                 Education
               </button>
             </div>
-            <div className="w-1/3 md:w-1/2 md:p-2  ">
+            <div className="w-1/3 md:w-1/2 p-2 h-14 md:h-20  ">
               {" "}
               <button
                 className={` w-full h-full bg-white hover:text-white  p-1
@@ -85,7 +85,7 @@ function Industries() {
                 Fintech
               </button>
             </div>
-            <div className="w-1/3  h-20 md:w-1/2 p-2 pl-0">
+            <div className="w-1/3   md:w-1/2 p-2 h-14 md:h-20">
               {" "}
               <button
                 className={` w-full h-full bg-white hover:text-white  
@@ -98,7 +98,7 @@ function Industries() {
                 Restaurants
               </button>
             </div>
-            <div className="w-1/3 md:w-1/2 p-2 ">
+            <div className="w-1/3 md:w-1/2 p-2 h-14 md:h-20 ">
               {" "}
               <button
                 className={` w-full h-full bg-white hover:text-white 
@@ -115,7 +115,7 @@ function Industries() {
         </div>
 
         {/* image section */}
-        <div className=" w-full md:w-1/2  p-5 text-xs md:text-sm   md:mr-20">
+        <div className=" w-full md:w-1/2  p-5 md:p-20 md:pr-0 text-xs md:text-sm   md:mr-20">
           {activeDiv === "automotive" && (
             <div
               className={`transition-section ${

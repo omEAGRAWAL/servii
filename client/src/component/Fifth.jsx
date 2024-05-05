@@ -12,7 +12,7 @@ import integrationmobile from "../asset/integrationmobile.png";
 function Fifth({ scrollToFormPage }) {
   return (
     <div className="flex justify-center items-center flex-col">
-      <div className="pt-10 mt-10">
+      <div className="pt-0 md:pt-10 mt-10">
         <div>
           <img src={solution} alt="solution  " className="hidden md:flex p-5" />
         </div>
@@ -25,7 +25,10 @@ function Fifth({ scrollToFormPage }) {
         </div>
       </div>
 
-      <div className=" flex justify-center items-center pr-15 pt-20 mt-20" id="features">
+      <div
+        className=" flex justify-center items-center pr-15 pt-0 md:pt-20 mt-20"
+        id="features"
+      >
         <img src={frame} alt=" form" className=" hidden md:block " />
       </div>
       <div className="  md:hidden mt-10 pt-5 ">
