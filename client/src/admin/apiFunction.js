@@ -22,13 +22,16 @@ export const getTerms = async () => {
 
 export const addTerms = async (data) => {
   try {
-    const response = await fetch("/api/terms", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
+    const response = await fetch(
+      "https://server-2-tnxj.onrender.com/api/terms",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      }
+    );
     if (!response.ok) {
       throw new Error("Failed to add terms");
     }
@@ -44,13 +47,16 @@ export const addTerms = async (data) => {
 export const updateTerms = async (updateid, data) => {
   console.log(updateid, data);
   try {
-    const response = await fetch(`/api/terms/${updateid}`, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
+    const response = await fetch(
+      `https://server-2-tnxj.onrender.com/api/terms/${updateid}`,
+      {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      }
+    );
 
     if (!response.ok) {
       throw new Error("Failed to update terms");
@@ -68,12 +74,15 @@ export const updateTerms = async (updateid, data) => {
 export const deleteTerms = async (updateid) => {
   try {
     console.log(updateid);
-    const update = await fetch(`/api/terms/${updateid}`, {
-      method: "DELETE",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    const update = await fetch(
+      `https://server-2-tnxj.onrender.com/api/terms/${updateid}`,
+      {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
     if (!update.ok) {
       throw new Error("Failed to delete terms");
     }
