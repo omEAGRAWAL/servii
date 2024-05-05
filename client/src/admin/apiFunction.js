@@ -2,7 +2,7 @@
 
 export const getTerms = async () => {
   try {
-    const data = await fetch("http://localhost:3000/api/terms", {
+    const data = await fetch("https://server-2-tnxj.onrender.com/api/terms", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -22,7 +22,7 @@ export const getTerms = async () => {
 
 export const addTerms = async (data) => {
   try {
-    const response = await fetch("http://localhost:3000/api/terms", {
+    const response = await fetch("/api/terms", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -44,16 +44,13 @@ export const addTerms = async (data) => {
 export const updateTerms = async (updateid, data) => {
   console.log(updateid, data);
   try {
-    const response = await fetch(
-      `http://localhost:3000/api/terms/${updateid}`,
-      {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      }
-    );
+    const response = await fetch(`/api/terms/${updateid}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
 
     if (!response.ok) {
       throw new Error("Failed to update terms");
@@ -71,7 +68,7 @@ export const updateTerms = async (updateid, data) => {
 export const deleteTerms = async (updateid) => {
   try {
     console.log(updateid);
-    const update = await fetch(`http://localhost:3000/api/terms/${updateid}`, {
+    const update = await fetch(`/api/terms/${updateid}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
