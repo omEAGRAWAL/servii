@@ -31,7 +31,7 @@ function Header1() {
     <div className="flex justify-center items-centre ">
       <Navbar className="flex gap-2 md:order-2 m-4 p-2 g-white shadow-xl rounded-2xl fixed top-0 z-50 w-4/5">
         <NavbarBrand className="m-1">
-          <img src={logo} alt="Logo" className="bg-white" />
+          <img href="/" src={logo} alt="Logo" className="bg-white" />
         </NavbarBrand>
         <div className="flex gap-2 md:order-2  m-1">
           <Button
