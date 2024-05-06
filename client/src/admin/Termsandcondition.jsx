@@ -26,24 +26,15 @@ function Privacy() {
 
   return (
     <div>
-      <div
-        className="p-10 mt-20 md:pt-20"
-        style={{
-          fontFamily: "Abhaya Libre Medium",
-          fontSize: "48px",
-          fontWeight: 500,
-          lineHeight: "56.63px",
-          textAlign: "center",
-        }}
-      >
-        Terms & Conditions
+      <div className="p-0 pt-10 md:p-10 mt-20 md:pt-20 font-abhaya-libre font-medium text-3xl md:text-6xl leading-tight text-center">
+        Terms & Condition
       </div>
 
       {terms.map((term) =>
         term.tc_title && term.tc_content ? (
           <div
             key={term._id}
-            className="md:ml-20  md:mr-10 m-5 flex flex-col text-[#111111]"
+            className="md:ml-20  md:mr-10 flex flex-col text-[#111111]"
           >
             <div
               className="md:ml-10 md:mr-10  m-5  text-base md:text-2xl "
@@ -59,7 +50,7 @@ function Privacy() {
               {term.tc_title}
             </div>
             <div
-              className="mt-5 md:ml-16 md:mr-16 ml-5 mr-5 text-sm md:text-lg
+              className="mt-2 md:ml-16 md:mr-16 ml-5 mr-5 text-sm md:text-lg
               p-1  text-[#828282]"
               style={{
                 fontFamily: "Montserrat",

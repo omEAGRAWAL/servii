@@ -35,7 +35,7 @@ function Footerbars() {
                   <Footer.Link href="#" className="hidden md:block">
                     Our Services
                   </Footer.Link>
-                  <Footer.Link href="#faqs">FAQs</Footer.Link>
+                  <Footer.Link href="/#faqs">FAQs</Footer.Link>
                   <Footer.Link href="#" className="hidden md:block">
                     Contact us
                   </Footer.Link>

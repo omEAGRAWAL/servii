@@ -2,6 +2,7 @@ import { Navbar, Button, NavbarBrand } from "flowbite-react";
 import logo from "../asset/servii_logo.svg";
 
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 function Header1() {
   const [location, setLocation] = useState(window.location);
 
@@ -31,7 +32,9 @@ function Header1() {
     <div className="flex justify-center items-centre ">
       <Navbar className="flex gap-2 md:order-2 m-4 p-2 g-white shadow-xl rounded-2xl fixed top-0 z-50 w-4/5">
         <NavbarBrand className="m-1">
-          <img href="/" src={logo} alt="Logo" className="bg-white" />
+          <Link to="/">
+            <img src={logo} alt="Logo" className="bg-white" />
+          </Link>
         </NavbarBrand>
         <div className="flex gap-2 md:order-2  m-1">
           <Button
@@ -54,7 +57,6 @@ function Header1() {
           <Navbar.Link
             // href="/#featur"
             onClick={() => smoothScroll("features")}
-            className={isActiveLink("#features") ? "text-red-800" : ""}
           >
             Features
           </Navbar.Link>
