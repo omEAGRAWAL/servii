@@ -35,12 +35,12 @@ function Footerbars() {
                   <Footer.Link href="#" className="hidden md:block">
                     Our Services
                   </Footer.Link>
-                  <Footer.Link href="#">FAQs</Footer.Link>
+                  <Footer.Link href="#faqs">FAQs</Footer.Link>
                   <Footer.Link href="#" className="hidden md:block">
                     Contact us
                   </Footer.Link>
-                  <Footer.Link href="#">Privacy & Policy</Footer.Link>
-                  <Footer.Link href="#">Terms & Condition</Footer.Link>
+                  <Footer.Link href="/privacy">Privacy & Policy</Footer.Link>
+                  <Footer.Link href="/tc">Terms & Condition</Footer.Link>
                 </Footer.LinkGroup>
               </div>
             </div>
@@ -53,7 +53,6 @@ function Footerbars() {
               year={2024}
               className="font-montserrat text-white text-md hidden md:block"
             />
-
             <Footer.LinkGroup className="flex justify-center order-2 font-montserrat text-md">
               <Footer.Link href="#" className="">
                 <AiOutlineInstagram size={25} className="" />
