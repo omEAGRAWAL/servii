@@ -36,7 +36,7 @@ function Privacy() {
           textAlign: "center",
         }}
       >
-        Privacy & Policy
+        Terms & Conditions
       </div>
 
       {terms.map((term) =>
